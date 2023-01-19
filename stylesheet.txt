@@ -166,6 +166,6 @@
 
 
 /* Ueberschreiben der Default-Klasse */
-.hasFlares::before{
+.hasFlares::before, .hasFlares::after{
 	background: url(https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/flare.png)
 }
