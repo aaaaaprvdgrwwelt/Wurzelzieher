@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Wurzelklicker
 	by:Georg
-	desc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!
+	desc:Das offizielle Wurzelklicker-Spiel des Wurzelwerk Musik-Bistros in Astheim.<//>Baue dir dein eigenes Wurzel-Imperium auf!
 	created:19/1/2023
 	updated:19/1/2023
 	version:0.01
