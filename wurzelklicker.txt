@@ -8,8 +8,8 @@ Let's make a game!
 
 Settings
 	background:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/hintergrund.jpg	// https://www.publicdomainpictures.net/de/view-image.php?image=27649&picture=scary-dark-forest
-	building cost increase:115%
-	building cost refund:50%
+	building cost increase:110%
+	building cost refund:75%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/stylesheet.txt
 
