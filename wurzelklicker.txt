@@ -64,7 +64,7 @@ Shinies
 				yield $amount bunnies
 			else
 				$amount=1*$boost
-				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
+				toast Die Dame in rot schenkt dir<//><b>[$amount] goldene Pommes[s?$amount]</b>!
 				yield $amount goldenCarrot
 			end
 		end
