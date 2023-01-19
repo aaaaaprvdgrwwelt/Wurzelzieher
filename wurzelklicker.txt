@@ -22,7 +22,7 @@ Layout
 Buttons
 	*wurzelButton
 		name:Ziehe eine Wurzel
-		desc:Klicke die Wurzel allen Ursprungs, um mehr Wurzeln zu erhalten!
+		desc:Klicke die Wurzel allen Ursprungs, um mehr Finanzen zu generieren. Die Wurzeln werden umgehend vom Großhändler für bares Geld abgeholt.
 		on click:anim icon wobble
 		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(1%)) yield 1 GoldenePommes
@@ -36,7 +36,7 @@ Buttons
 Resources
 	*bunny|bunnies
 		name:Bunny|Bunnies
-		desc:Dies sind deine Wurzeln. Du kannst diese als Währung einsetzen, um Dinge zu kaufen. Dein Ziel ist, so viele Wurzeln zu ziehen wie möglich!
+		desc:Dies sind deine Finanzen. Du kannst mit diesem viele schöne Dinge kaufen. Dein Ziel ist es, der reichste Mensch diesseits und jenseits der Galaxis zu werden!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
