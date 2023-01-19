@@ -7,11 +7,11 @@ Let's make a game!
 	version:0.01
 
 Settings
-	background:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/hintergrund.jpg
+	background:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/hintergrund.jpg	// https://www.publicdomainpictures.net/de/view-image.php?image=27649&picture=scary-dark-forest
 	building cost increase:115%
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
-	stylesheet:stuff/bigBlue.css
+	stylesheet:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/stylesheet.css
 
 Layout
 	use default
