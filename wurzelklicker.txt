@@ -13,7 +13,7 @@ Settings
 	building cost increase:110%
 	// Für den Verkauf eines Gebäudes erhält man 75% des Wertes
 	building cost refund:75%
-	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/wurzelIcons.png
 	stylesheet:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/stylesheet.txt
 
 Layout
