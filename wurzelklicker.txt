@@ -22,7 +22,7 @@ Layout
 Buttons
 	*wurzelButton
 		name:Ziehe eine Wurzel
-		desc:Klicke die Wurzel allen Ursprungs, um mehr Finanzen zu generieren. Die Wurzeln werden umgehend vom Großhändler für bares Geld abgeholt.
+		desc:Klicke die Wurzel allen Ursprungs, um mehr Finanzen zu generieren. Die Wurzeln werden umgehend vom Großhändler gegen Bares eingetauscht.
 		on click:anim icon wobble
 		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(1%)) yield 1 GoldenePommes
@@ -36,7 +36,7 @@ Buttons
 Resources
 	*bunny|bunnies
 		name:Bunny|Bunnies
-		desc:Dies sind deine Finanzen. Du kannst mit diesem viele schöne Dinge kaufen. Dein Ziel ist es, der reichste Mensch diesseits und jenseits der Galaxis zu werden!
+		desc:Dies sind deine Finanzen. Du kannst mit den harten Talern viele schöne Dinge kaufen. Dein Ziel ist es, der reichste Mensch diesseits und jenseits der Galaxis zu werden!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
@@ -55,7 +55,7 @@ Shinies
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Dauer bis zum Erscheinen höchstens (sec)
-		frequency variation:5
+		frequency variation:60
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
 		class:bigButton
