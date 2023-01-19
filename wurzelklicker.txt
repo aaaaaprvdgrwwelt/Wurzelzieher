@@ -47,13 +47,14 @@ Resources
 		hidden when 0
 		
 Shinies
-	*luckyBunny
+	*LadyinRed
 		on click:log Woop
 		movement:onRight moveLeft fade bounce:0.05
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Dauer bis zum Erscheinen höchstens (sec)
 		frequency variation:5
+		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
 		class:bigButton
 		on click:
@@ -329,11 +330,11 @@ Upgrades
 		cost:1 goldenCarrot
 		req:1 goldenCarrot:earned
 		
-	*rabbitHaste
-		name:Rabbit's haste
-		desc:I'm late! I'm late! For a very important date!<//><b>Effect:</b><.>lucky bunnies appear 30% more often
+	*FlotteLady
+		name:FLotte Lady
+		desc:Flott! Wir müssen liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
 		icon:icons[2,6]
-		passive:multiply frequency of luckyBunny by 0.7
+		passive:multiply frequency of LadyinRed by 0.7
 		cost:5 goldenCarrots
 		req:1 goldenCarrot:earned
 	
