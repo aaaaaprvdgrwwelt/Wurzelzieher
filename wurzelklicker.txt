@@ -1,10 +1,10 @@
 Let's make a game!
-	name:Bunny Clicker
-	by:Orteil
+	name:Wurzelklicker
+	by:Georg
 	desc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!
-	created:25/7/2017
-	updated:24/10/2017
-	version:1
+	created:19/1/2023
+	updated:19/1/2023
+	version:0.01
 
 Settings
 	background:stuff/meadow.jpg
@@ -19,7 +19,7 @@ Layout
 Buttons
 	*bunnyButton
 		name:Make a bunny
-		desc:Click this little bunny to get more bunnies!
+		desc:Klicke die Wurzel allen Ursprungs, um mehr Wurzeln zu erhalten!
 		on click:anim icon wobble
 		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
