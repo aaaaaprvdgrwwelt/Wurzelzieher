@@ -50,8 +50,10 @@ Shinies
 	*luckyBunny
 		on click:log Woop
 		movement:onRight moveLeft fade bounce:0.05
-		frequency:60
-		frequency variation:30
+		// Dauer bis zum Erscheinen mindestens (sec)
+		frequency:1
+		// Dauer bis zum Erscheinen höchstens (sec)
+		frequency variation:5
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
 		class:bigButton
 		on click:
