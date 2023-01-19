@@ -4,7 +4,7 @@ Let's make a game!
 	desc:Das offizielle Wurzelklicker-Spiel des Wurzelwerk Musik-Bistros in Astheim.<//>Baue dir dein eigenes Wurzel-Imperium auf!
 	created:19/1/2023
 	updated:19/1/2023
-	version:0.01
+	version:0.1
 
 Settings
 	// https://www.publicdomainpictures.net/de/view-image.php?image=27649&picture=scary-dark-forest
@@ -40,8 +40,8 @@ Resources
 		show earned
 		
 	*goldenCarrot|goldenCarrots
-		name:Golden carrot|Golden carrots
-		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
+		name:Goldene Pommes
+		desc:Diese güldenen Pommes sind furchtbar selten, furchtbar wertvoll und furchtbar lecker!
 		icon:icons[0,1]
 		class:noBackground
 		hidden when 0
@@ -318,11 +318,11 @@ Upgrades
 		passive:multiply yield of citadel by 2
 		req:10 citadels
 		
-	//golden carrot upgrades
+	//Goldene Pommes upgrades
 	
 	*goldenTouch
 		name:Golden touch
-		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 golden carrot per bunny click
+		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 goldene Pommes per bunny click
 		icon:icons[2,5]
 		cost:1 goldenCarrot
 		req:1 goldenCarrot:earned
@@ -351,7 +351,7 @@ Upgrades
 		
 	*moonGardens
 		name:Moon gardens
-		desc:The royal botanists in your moon citadels have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon citadels now produce 1 golden carrot every 100 seconds
+		desc:The royal botanists in your moon citadels have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon citadels now produce 1 goldene Pommes every 100 seconds
 		icon:icons[2,9]
 		cost:100 goldenCarrots
 		req:50 goldenCarrots:earned
@@ -410,17 +410,17 @@ Achievements
 		
 	*carrotAchiev1
 		name:Isn't it neat
-		desc:Have <b>1</b> golden carrot.
+		desc:Have <b>1</b> goldene Pommes.
 		req:1 goldenCarrot
 		icon:icons[0,1] icons[0,2]
 	*carrotAchiev2
 		name:All that glitters
-		desc:Have <b>100</b> golden carrots.
+		desc:Have <b>100</b> goldene Pommes.
 		req:100 goldenCarrot
 		icon:icons[0,1] icons[0,3]
 	*carrotAchiev3
 		name:Zero nutritional value
-		desc:Have <b>1000</b> golden carrots.
+		desc:Have <b>1000</b> goldene Pommes.
 		req:1000 goldenCarrot
 		icon:icons[0,1] icons[0,4]
 	
