@@ -69,7 +69,7 @@ Shinies
 			end
 		end
 
-Gebaeude
+Bauwerke
 	*TEMPLATE
 		on click:anim glow
 		
