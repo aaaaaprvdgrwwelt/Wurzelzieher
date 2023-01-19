@@ -1,6 +1,6 @@
 Let's make a game!
 	name:Wurzelklicker
-	by:Georg
+	by:Wurzelsepp
 	desc:Das offizielle Wurzelklicker-Spiel des Wurzelwerk Musik-Bistros in Astheim.<//>Baue dir dein eigenes Wurzel-Imperium auf!
 	created:19/1/2023
 	updated:19/1/2023
@@ -9,7 +9,9 @@ Let's make a game!
 Settings
 	// https://www.publicdomainpictures.net/de/view-image.php?image=27649&picture=scary-dark-forest
 	background:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/hintergrund.jpg
+	// Jedes neue Gebäude wird 10% teurer als das Alte
 	building cost increase:110%
+	// Für den Verkauf eines Gebäudes erhält man 75% des Wertes
 	building cost refund:75%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/stylesheet.txt
