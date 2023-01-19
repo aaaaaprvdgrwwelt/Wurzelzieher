@@ -62,11 +62,11 @@ Shinies
 			if (chance(25%))
 				//get at least 7, or between 1 and 3 minutes of our bunny production
 				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
-				toast Die Damen in rot schenkt dir<//><b>[$amount] Wurzeln</b>.
+				toast Die Dame in Rot schenkt dir<//><b>[$amount] Wurzeln</b>.
 				yield $amount bunnies
 			else
 				$amount=1*$boost
-				toast Die Dame in rot schenkt dir<//><b>[$amount] goldene Pommes</b>!
+				toast Die Dame in Rot schenkt dir<//><b>[$amount] goldene Pommes</b>!
 				yield $amount goldenCarrot
 			end
 		end
