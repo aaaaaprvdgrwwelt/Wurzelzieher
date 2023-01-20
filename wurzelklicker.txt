@@ -66,7 +66,7 @@ Shinies
 			if (chance(25%))
 				//get at least 7, or between 1 and 3 minutes of our taler production
 				$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
-				toast Die Dame in Rot schenkt dir<//><b>[$amount] Wurzeln</b>.
+				toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
 				yield $amount taler
 			else
 				$amount=1*$boost
@@ -79,9 +79,9 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
 		
-	*cage|cages
-		name:Rabbit cage|Rabbit cages
-		desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
+	*pommes
+		name:Pommes
+		desc:Eine Tüte Pommes.<//><b>Einnahmen:</b><.>Generiert 1 Taller alle 10 Sekunden.
 		icon:icons[3,0]
 		cost:15 taler
 		on tick:yield 0.1 taler
@@ -255,30 +255,30 @@ Upgrades
 		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,0]
 		cost:1000 taler
-		passive:multiply yield of cage by 2
+		passive:multiply yield of pommes by 2
 		passive:multiply yield of hutch by 2
 		passive:multiply yield of coop by 2
-		req:(cages>=10 or hutches>=10 or coops>=10)
+		req:(pommes>=10 or hutches>=10 or coops>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
 		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,1]
 		cost:100000 taler
-		passive:multiply yield of cage by 2
+		passive:multiply yield of pommes by 2
 		passive:multiply yield of hutch by 2
 		passive:multiply yield of coop by 2
-		req:(cages>=50 or hutches>=50 or coops>=50)
+		req:(pommes>=50 or hutches>=50 or coops>=50)
 		
 	*buildingUpgrade3
 		name:Shredded newspapers
 		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,2]
 		cost:5000000 taler
-		passive:multiply yield of cage by 2
+		passive:multiply yield of pommes by 2
 		passive:multiply yield of hutch by 2
 		passive:multiply yield of coop by 2
-		req:(cages>=100 or hutches>=100 or coops>=100)
+		req:(pommes>=100 or hutches>=100 or coops>=100)
 		
 	*buildingUpgrade4
 		name:Pretty fences
