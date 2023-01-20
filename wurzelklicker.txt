@@ -87,9 +87,9 @@ Buildings
 		on tick:yield 0.1 taler
 		unlocked
 	
-	*hutch|hutches
-		name:Rabbit hutch|Rabbit hutches
-		desc:A bit roomier than a cage, with enough space to hop around.<//><b>Effect:</b><.>Produces 1 rabbit every 2 seconds.
+	*pommesteller
+		name:Pommesteller
+		desc:Ein großer Teller Pommes mit Ketchup und Majo.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 2 Sekunden.
 		icon:icons[3,1]
 		cost:100 taler
 		on tick:yield 0.5 taler
