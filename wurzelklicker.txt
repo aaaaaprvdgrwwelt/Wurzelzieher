@@ -80,8 +80,8 @@ Buildings
 		on click:anim glow
 		
 	*pommes
-		name:Pommes
-		desc:Eine Tüte Pommes.<//><b>Einnahmen:</b><.>Generiert 1 Taller alle 10 Sekunden.
+		name:Tüte Pommes
+		desc:Eine Tüte Pommes.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 10 Sekunden.
 		icon:icons[3,0]
 		cost:15 taler
 		on tick:yield 0.1 taler
