@@ -252,33 +252,33 @@ Upgrades
 	
 	*buildingUpgrade1
 		name:Sippy bottles
-		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,0]
 		cost:1000 taler
 		passive:multiply yield of pommes by 2
-		passive:multiply yield of hutch by 2
+		passive:multiply yield of pommesteller by 2
 		passive:multiply yield of coop by 2
-		req:(pommes>=10 or hutches>=10 or coops>=10)
+		req:(pommes>=10 or pommesteller>=10 or coops>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
-		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,1]
 		cost:100000 taler
 		passive:multiply yield of pommes by 2
-		passive:multiply yield of hutch by 2
+		passive:multiply yield of pommesteller by 2
 		passive:multiply yield of coop by 2
-		req:(pommes>=50 or hutches>=50 or coops>=50)
+		req:(pommes>=50 or pommesteller>=50 or coops>=50)
 		
 	*buildingUpgrade3
 		name:Shredded newspapers
-		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,2]
 		cost:5000000 taler
 		passive:multiply yield of pommes by 2
-		passive:multiply yield of hutch by 2
+		passive:multiply yield of pommesteller by 2
 		passive:multiply yield of coop by 2
-		req:(pommes>=100 or hutches>=100 or coops>=100)
+		req:(pommes>=100 or pommesteller>=100 or coops>=100)
 		
 	*buildingUpgrade4
 		name:Pretty fences
