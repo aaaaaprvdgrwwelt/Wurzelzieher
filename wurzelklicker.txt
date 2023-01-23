@@ -13,7 +13,7 @@ Settings
 	building cost increase:110%
 	// Für den Verkauf eines Gebäudes erhält man 75% des Wertes
 	building cost refund:75%
-	// 01: https://openclipart.org/detail/271892/medieval-design
+	// https://openclipart.org/detail/271892/medieval-design // https://openclipart.org/detail/297068/late-for-work-2
 	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/wurzelIcons.png
 	stylesheet:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/stylesheet.txt
 
@@ -55,8 +55,10 @@ Shinies
 		movement:onRight moveLeft fade bounce:0.05
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
-		// Dauer bis zum Erscheinen höchstens (sec)
-		frequency variation:60
+		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
+		frequency variation:59
+		// Dauer, die die Grafik angezeigt wird (sec)
+		duration: 3
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
 		class:bigButton
@@ -335,7 +337,7 @@ Upgrades
 		
 	*FlotteLady
 		name:FLotte Lady
-		desc:Flott! Wir müssen liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
+		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
 		icon:icons[2,6]
 		passive:multiply frequency of LadyinRed by 0.7
 		cost:5 GoldenePommes
