@@ -84,7 +84,7 @@ Shinies
 // Bratwurst (Bratwurst im Brötchen -> Bratwurst im Krautweck -> Bratwurst mit Pommes)
 // Currywurst (Currywurst mit Brötchen -> Currywurst mit Pommes -> Currywurst spezial)
 // Schnitzel (Schnitzel -> Schnitzel mit Pilzrahmsoße -> Käseschnitzel)
-// Vegetarisch (Veggie-Burger -> Veggie-Teller -> Großer veganer Teller)
+// Veggies (Veggie-Burger -> Veggie-Teller -> Großer veganer Teller)
 // Burger (Burger -> Käseburger -> Burger-Menu)
 Buildings
 	*TEMPLATE
@@ -162,14 +162,14 @@ Buildings
 	
 	*veggie|veggies
 		name:Veggie|Veggies
-		desc:Your taler are building their own villages now!<//><b>Effect:</b><.>Produces 300 rabbits per second.
+		desc:Eine kleine Auswahl an vegetarischem Finger-Food.<//><b>Effect:</b><.>Produces 300 rabbits per second.
 		icon:icons[3,5]
 		cost:200000 taler, 1 GoldenePommes
 		on tick:yield 300 taler
 		req:200000 taler:earned and independenceDay
 		
-	*city|cities
-		name:Rabbit city|Rabbit cities
+	*burger
+		name:Burger
 		desc:A bustling little city, populated with busy rabbits.<//><b>Effect:</b><.>Produces 1000 rabbits per second.
 		icon:icons[3,6]
 		cost:3000000 taler, 4 GoldenePommes
@@ -341,21 +341,21 @@ Upgrades
 		
 	*buildingUpgrade6
 		name:taler TVs
-		desc:Televisions that broadcast taler cartoons, taler sitcoms, and taler news bulletins.<//><b>Effect:</b><.>Veggie production x2<.>rabbit city production x2
+		desc:Televisions that broadcast taler cartoons, taler sitcoms, and taler news bulletins.<//><b>Effect:</b><.>Veggie production x2<.>Burger production x2
 		icon:icons[2,0] icons[3,5]
 		cost:1000000 taler
 		passive:multiply yield of veggie by 2
-		passive:multiply yield of city by 2
-		req:(veggies>=10 or cities>=10)
+		passive:multiply yield of burger by 2
+		req:(veggies>=10 or burger>=10)
 		
 	*buildingUpgrade7
 		name:Wee little taler cars
-		desc:Your taler drive around in these. How nice!<//><b>Effect:</b><.>Veggie production x2<.>rabbit city production x2
+		desc:Your taler drive around in these. How nice!<//><b>Effect:</b><.>Veggie production x2<.>Burger production x2
 		icon:icons[2,0] icons[3,6]
 		cost:500000000 taler
 		passive:multiply yield of veggie by 2
-		passive:multiply yield of city by 2
-		req:(veggies>=50 or cities>=50)
+		passive:multiply yield of burger by 2
+		req:(veggies>=50 or burger>=50)
 		
 	*buildingUpgrade8
 		name:Soothing moon crystals
