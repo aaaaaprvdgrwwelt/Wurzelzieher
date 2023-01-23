@@ -109,11 +109,21 @@ Buildings
 		unlocked
 	
 	*salat|salate
+		// Titel
 		name:Salat|Salate
+		// Beschreibung
 		desc:Ein kleiner Beilagensalat.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 2 Sekunden.
+		// Icon Grafik1
 		icon:icons[3,1]
+		// Kosten für das erste Gebäude
 		cost:100 taler
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 0.5 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:100 taler:earned
 	
 	*bratwurst|bratwuerste
