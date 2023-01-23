@@ -182,50 +182,89 @@ Buildings
 		req:20000 taler:earned
 	
 	*veggie|veggies
+		// Titel
 		name:Veggie|Veggies
+		// Beschreibung
 		desc:Eine kleine Auswahl an vegetarischem Finger-Food.<//><b>Einnahmen:</b><.>Generiert 300 Taler pro Sekunde.
+		// Icon Grafik
 		icon:icons[3,5]
+		// Kosten für das erste Gebäude
 		cost:200000 taler, 1 GoldenePommes
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 300 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:200000 taler:earned and independenceDay
 		
 	*burger
+		// Titel
 		name:Burger
+		// Beschreibung
 		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
+		// Icon Grafik
 		icon:icons[3,6]
+		// Kosten für das erste Gebäude
 		cost:3000000 taler, 4 GoldenePommes
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 1000 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:3000000 taler:earned and independenceDay
 		
 	*kesselfleisch
+		// Titel
 		name:Kesselfleisch
+		// Beschreibung
 		desc:Eine Spezialität, die man nur ganz selten bekommt. Bestes Fleisch vom Metzger wird selbst zubereitet.<//><b>Einnahmen:</b><.>Generiert 4.000 Taler pro Sekunde.
+		// Icon Grafik
 		icon:icons[3,7]
+		// Kosten für das erste Gebäude
 		cost:70000000 taler, 16 GoldenePommes
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 4000 taler
 		on tick:if (have moonGardens) yield 0.01 GoldenePommes
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:70000000 taler:earned and independenceDay
 		
 	*inselparadies
+		// Titel
 		name:Altmain Inselparadies
+		// Anzuzeigender Text
 		text:Altmain Inselparadies ([this]%)
-		desc:Die Outdoor-Gastronomie an der Mainschleife. Die vielen Hütten aufzubauen kostet enormen Aufwand und Zeit.<//><b>Das Inselparadies ist zu [this]% aufgebaut.</b>
+		// Beschreibung
+		desc:Die Outdoor-Gastronomie an der Mainschleife. Die vielen Hütten aufzubauen und Technik zu installieren kostet enormen Aufwand und Zeit.<//><b>Das Inselparadies ist zu [this]% aufgebaut.</b>
+		// Icon Grafik
 		icon:icons[3,8]
+		// Kosten für das erste Gebäude
 		cost:300000000 taler, 100 GoldenePommes
-		req:70000000 taler:earned and independenceDay
-		limit:100
+		// Jedes neue Gebäude wird x% teurer
 		cost increase:105%
-		
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+		req:70000000 taler:earned and independenceDay
+		// Maximale Anzahl an möglichen Gebäuden
+		limit:100
+
+
+
 Upgrades
 	*TEMPLATE
 		on click:anim glow
-	
-	//food upgrades
-	//inspiration : http://rabbit.org/suggested-vegetables-and-fruits-for-a-rabbit-diet/
-	
-	*parsley
-		name:Parsley
-		desc:A nice little supplement to your taler' diet.<//><b>Effect:</b><.>+1 taler/click
+
+	*spaten
+		name:Spaten
+		desc:Mit dem Spaten fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
 		icon:icons[1,1]
 		cost:100 taler
 		passive:increase taler yield of wurzelButton by 1
