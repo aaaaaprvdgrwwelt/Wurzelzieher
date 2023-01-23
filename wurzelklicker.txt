@@ -26,7 +26,7 @@ Buttons
 		desc:Klicke die Wurzel allen Ursprungs, um mehr Finanzen zu generieren. Die Wurzeln werden umgehend vom Großhändler gegen Bares eingetauscht.
 		on click:anim icon wobble
 		on click:yield 1 taler
-		on click:if (have goldenTouch and chance(1%)) yield 1 GoldenePommes
+		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/logo.png
 		no text
 		class:bigButton hasFlares
@@ -365,12 +365,12 @@ Upgrades
 		cost:1000000000 taler
 		passive:multiply yield of kesselfleisch by 2
 		req:10 kesselfleisch
-		
-	//Goldene Pommes upgrades
 	
-	*goldenTouch
-		name:Golden touch
-		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 goldene Pommes per taler click
+	// Goldene Pommes upgrades
+
+	*GoldenerDaumen
+		name:Goldener Daumen
+		desc:Mit dem goldenen Daumen bist du in der Lage, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 1%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
 		icon:icons[2,5]
 		cost:1 GoldenePommes
 		req:1 GoldenePommes:earned
