@@ -116,7 +116,7 @@ Buildings
 		on tick:yield 0.5 taler
 		req:100 taler:earned
 	
-	*bratwurst|bratwürste
+	*bratwurst|bratwuerste
 		name:Bratwurst|Bratwürste
 		desc:A much nicer rabbit home where full taler families can live.<//><b>Effect:</b><.>Produces 5 rabbits per second.
 		icon:icons[3,2]
@@ -279,7 +279,7 @@ Upgrades
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of salat by 2
 		passive:multiply yield of bratwurst by 2
-		req:(pommes>=10 or salate>=10 or bratwürste>=10)
+		req:(pommes>=10 or salate>=10 or bratwuerste>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
@@ -289,7 +289,7 @@ Upgrades
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of salat by 2
 		passive:multiply yield of bratwurst by 2
-		req:(pommes>=50 or salate>=50 or bratwürste>=50)
+		req:(pommes>=50 or salate>=50 or bratwuerste>=50)
 		
 	*buildingUpgrade3
 		name:Shredded newspapers
@@ -299,7 +299,7 @@ Upgrades
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of salat by 2
 		passive:multiply yield of bratwurst by 2
-		req:(pommes>=100 or salate>=100 or bratwürste>=100)
+		req:(pommes>=100 or salate>=100 or bratwuerste>=100)
 		
 	*buildingUpgrade4
 		name:Pretty fences
