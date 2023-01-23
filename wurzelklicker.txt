@@ -53,11 +53,12 @@ Shinies
 	*LadyinRed
 		on click:log Woop
 		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
-		movement:onRight moveLeft fade bounce:0.05
+		//movement:onRight moveLeft fade bounce:0.05
+		movement:onLeft moveRight
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
-		frequency variation:59
+		frequency variation:29
 		// Dauer, die die Grafik angezeigt wird (sec)
 		duration: 10
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
