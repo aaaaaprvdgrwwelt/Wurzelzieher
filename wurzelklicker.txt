@@ -99,7 +99,7 @@ Buildings
 		on tick:yield 0.5 taler
 		req:100 taler:earned
 	
-	*Beilagensalat|Beilagensalate
+	*beilagensalat|beilagensalate
 		name:Beilagensalat|Beilagensalate
 		desc:A much nicer rabbit home where full taler families can live.<//><b>Effect:</b><.>Produces 5 rabbits per second.
 		icon:icons[3,2]
@@ -261,8 +261,8 @@ Upgrades
 		cost:1000 taler
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of Beilagensalat by 2
-		req:(pommes>=10 or pommesteller>=10 or Beilagensalate>=10)
+		passive:multiply yield of beilagensalat by 2
+		req:(pommes>=10 or pommesteller>=10 or beilagensalate>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
@@ -271,8 +271,8 @@ Upgrades
 		cost:100000 taler
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of Beilagensalat by 2
-		req:(pommes>=50 or pommesteller>=50 or Beilagensalate>=50)
+		passive:multiply yield of beilagensalat by 2
+		req:(pommes>=50 or pommesteller>=50 or beilagensalate>=50)
 		
 	*buildingUpgrade3
 		name:Shredded newspapers
@@ -281,8 +281,8 @@ Upgrades
 		cost:5000000 taler
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of Beilagensalat by 2
-		req:(pommes>=100 or pommesteller>=100 or Beilagensalate>=100)
+		passive:multiply yield of beilagensalat by 2
+		req:(pommes>=100 or pommesteller>=100 or beilagensalate>=100)
 		
 	*buildingUpgrade4
 		name:Pretty fences
