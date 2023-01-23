@@ -52,13 +52,14 @@ Resources
 Shinies
 	*LadyinRed
 		on click:log Woop
+		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
 		movement:onRight moveLeft fade bounce:0.05
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
 		frequency variation:59
 		// Dauer, die die Grafik angezeigt wird (sec)
-		duration: 3
+		duration: 10
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
 		class:bigButton
@@ -77,10 +78,11 @@ Shinies
 			end
 		end
 
+// Gebäude
 Buildings
 	*TEMPLATE
 		on click:anim glow
-		
+
 	*pommes
 		name:Tüte Pommes
 		desc:Eine Tüte Pommes.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 10 Sekunden.
@@ -97,8 +99,8 @@ Buildings
 		on tick:yield 0.5 taler
 		req:100 taler:earned
 	
-	*coop|coops
-		name:Rabbit coop|Rabbit coops
+	*Beilagensalat
+		name:Beilagensalat|Beilagensalate
 		desc:A much nicer rabbit home where full taler families can live.<//><b>Effect:</b><.>Produces 5 rabbits per second.
 		icon:icons[3,2]
 		cost:600 taler
@@ -254,33 +256,33 @@ Upgrades
 	
 	*buildingUpgrade1
 		name:Sippy bottles
-		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>rabbit coop production x2
+		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>Beilagensalat production x2
 		icon:icons[2,0] icons[3,0]
 		cost:1000 taler
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of coop by 2
-		req:(pommes>=10 or pommesteller>=10 or coops>=10)
+		passive:multiply yield of Beilagensalat by 2
+		req:(pommes>=10 or pommesteller>=10 or Beilagensalate>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
-		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>rabbit coop production x2
+		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>Beilagensalat production x2
 		icon:icons[2,0] icons[3,1]
 		cost:100000 taler
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of coop by 2
-		req:(pommes>=50 or pommesteller>=50 or coops>=50)
+		passive:multiply yield of Beilagensalat by 2
+		req:(pommes>=50 or pommesteller>=50 or Beilagensalate>=50)
 		
 	*buildingUpgrade3
 		name:Shredded newspapers
-		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>rabbit coop production x2
+		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>Beilagensalat production x2
 		icon:icons[2,0] icons[3,2]
 		cost:5000000 taler
 		passive:multiply yield of pommes by 2
 		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of coop by 2
-		req:(pommes>=100 or pommesteller>=100 or coops>=100)
+		passive:multiply yield of Beilagensalat by 2
+		req:(pommes>=100 or pommesteller>=100 or Beilagensalate>=100)
 		
 	*buildingUpgrade4
 		name:Pretty fences
