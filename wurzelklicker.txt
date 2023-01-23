@@ -84,7 +84,7 @@ Shinies
 // Bratwurst (Bratwurst im Brötchen -> Bratwurst im Krautweck -> Bratwurst mit Pommes)
 // Currywurst (Currywurst mit Brötchen -> Currywurst mit Pommes -> Currywurst spezial)
 // Schnitzel (Schnitzel -> Schnitzel mit Pilzrahmsoße -> Käseschnitzel)
-// Vegetarisch (Veggie-Burger -> Veggie-Teller)
+// Vegetarisch (Veggie-Burger -> Veggie-Teller -> Großer veganer Teller)
 // Burger (Burger -> Käseburger -> Burger-Menu)
 Buildings
 	*TEMPLATE
@@ -160,8 +160,8 @@ Buildings
 		on tick:yield 90 taler
 		req:20000 taler:earned
 	
-	*village|villages
-		name:Rabbit village|Rabbit villages
+	*veggie|veggies
+		name:Veggie|Veggies
 		desc:Your taler are building their own villages now!<//><b>Effect:</b><.>Produces 300 rabbits per second.
 		icon:icons[3,5]
 		cost:200000 taler, 1 GoldenePommes
@@ -341,21 +341,21 @@ Upgrades
 		
 	*buildingUpgrade6
 		name:taler TVs
-		desc:Televisions that broadcast taler cartoons, taler sitcoms, and taler news bulletins.<//><b>Effect:</b><.>rabbit village production x2<.>rabbit city production x2
+		desc:Televisions that broadcast taler cartoons, taler sitcoms, and taler news bulletins.<//><b>Effect:</b><.>Veggie production x2<.>rabbit city production x2
 		icon:icons[2,0] icons[3,5]
 		cost:1000000 taler
-		passive:multiply yield of village by 2
+		passive:multiply yield of veggie by 2
 		passive:multiply yield of city by 2
-		req:(villages>=10 or cities>=10)
+		req:(veggies>=10 or cities>=10)
 		
 	*buildingUpgrade7
 		name:Wee little taler cars
-		desc:Your taler drive around in these. How nice!<//><b>Effect:</b><.>rabbit village production x2<.>rabbit city production x2
+		desc:Your taler drive around in these. How nice!<//><b>Effect:</b><.>Veggie production x2<.>rabbit city production x2
 		icon:icons[2,0] icons[3,6]
 		cost:500000000 taler
-		passive:multiply yield of village by 2
+		passive:multiply yield of veggie by 2
 		passive:multiply yield of city by 2
-		req:(villages>=50 or cities>=50)
+		req:(veggies>=50 or cities>=50)
 		
 	*buildingUpgrade8
 		name:Soothing moon crystals
