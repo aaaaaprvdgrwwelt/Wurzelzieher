@@ -79,28 +79,45 @@ Shinies
 		end
 
 // Gebäude
+// Pommes (Tüte Pommes -> Pommesteller -> Pommesteller rot/weiß)
+// Salat (Beilagensalat -> Salatteller -> Salatteller mit Putenstreifen)
+// Bratwurst (Bratwurst im Brötchen -> Bratwurst im Krautweck -> Bratwurst mit Pommes)
+// Currywurst (Currywurst mit Brötchen -> Currywurst mit Pommes -> Currywurst spezial)
+// Burger (Burger -> Käseburger -> Burger-Menu)
+// Schnitzel (Schnitzel -> Schnitzel mit Pilzrahmsoße -> Käseschnitzel)
+// Vegetarisch (Veggie-Burger -> Veggie-Teller)
 Buildings
 	*TEMPLATE
 		on click:anim glow
 
 	*pommes
-		name:Tüte Pommes
+		// Titel
+		name:Pommes
+		// Beschreibung
 		desc:Eine Tüte Pommes.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 10 Sekunden.
+		// Icon Grafik
 		icon:icons[3,0]
+		// Kosten für das erste Gebäude
 		cost:15 taler
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 0.1 taler
+		// Von Anfang an freigeschaltet
 		unlocked
 	
-	*pommesteller
-		name:Pommesteller
+	*salat|salate
+		name:Salat|Salate
 		desc:Ein großer Teller Pommes mit Ketchup und Majo.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 2 Sekunden.
 		icon:icons[3,1]
 		cost:100 taler
 		on tick:yield 0.5 taler
 		req:100 taler:earned
 	
-	*beilagensalat|beilagensalate
-		name:Beilagensalat|Beilagensalate
+	*bratwurst|bratwürste
+		name:Bratwurst|Bratwürste
 		desc:A much nicer rabbit home where full taler families can live.<//><b>Effect:</b><.>Produces 5 rabbits per second.
 		icon:icons[3,2]
 		cost:600 taler
@@ -256,33 +273,33 @@ Upgrades
 	
 	*buildingUpgrade1
 		name:Sippy bottles
-		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>Beilagensalat production x2
+		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
 		icon:icons[2,0] icons[3,0]
 		cost:1000 taler
 		passive:multiply yield of pommes by 2
-		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of beilagensalat by 2
-		req:(pommes>=10 or pommesteller>=10 or beilagensalate>=10)
+		passive:multiply yield of salat by 2
+		passive:multiply yield of bratwurst by 2
+		req:(pommes>=10 or salate>=10 or bratwürste>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
-		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>Beilagensalat production x2
+		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
 		icon:icons[2,0] icons[3,1]
 		cost:100000 taler
 		passive:multiply yield of pommes by 2
-		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of beilagensalat by 2
-		req:(pommes>=50 or pommesteller>=50 or beilagensalate>=50)
+		passive:multiply yield of salat by 2
+		passive:multiply yield of bratwurst by 2
+		req:(pommes>=50 or salate>=50 or bratwürste>=50)
 		
 	*buildingUpgrade3
 		name:Shredded newspapers
-		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit pommesteller production x2<.>Beilagensalat production x2
+		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
 		icon:icons[2,0] icons[3,2]
 		cost:5000000 taler
 		passive:multiply yield of pommes by 2
-		passive:multiply yield of pommesteller by 2
-		passive:multiply yield of beilagensalat by 2
-		req:(pommes>=100 or pommesteller>=100 or beilagensalate>=100)
+		passive:multiply yield of salat by 2
+		passive:multiply yield of bratwurst by 2
+		req:(pommes>=100 or salate>=100 or bratwürste>=100)
 		
 	*buildingUpgrade4
 		name:Pretty fences
