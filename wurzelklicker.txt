@@ -110,18 +110,28 @@ Buildings
 	
 	*salat|salate
 		name:Salat|Salate
-		desc:Ein großer Teller Pommes mit Ketchup und Majo.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 2 Sekunden.
+		desc:Ein kleiner Beilagensalat.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 2 Sekunden.
 		icon:icons[3,1]
 		cost:100 taler
 		on tick:yield 0.5 taler
 		req:100 taler:earned
 	
 	*bratwurst|bratwuerste
+		// Titel
 		name:Bratwurst|Bratwürste
-		desc:A much nicer rabbit home where full taler families can live.<//><b>Effect:</b><.>Produces 5 rabbits per second.
+		// Beschreibung
+		desc:Eine Bratwurst vom heimischen Metzger mit Brötchen.<//><b>Einnahmen:</b><.>Generiert 5 Taler pro Sekunde.
+		// Icon Grafik
 		icon:icons[3,2]
+		// Kosten für das erste Gebäude
 		cost:600 taler
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 5 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:600 taler:earned
 	
 	*pen|pens
