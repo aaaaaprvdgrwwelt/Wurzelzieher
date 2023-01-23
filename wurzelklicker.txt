@@ -99,7 +99,7 @@ Buildings
 		on tick:yield 0.5 taler
 		req:100 taler:earned
 	
-	*Beilagensalat
+	*Beilagensalat|Beilagensalate
 		name:Beilagensalat|Beilagensalate
 		desc:A much nicer rabbit home where full taler families can live.<//><b>Effect:</b><.>Produces 5 rabbits per second.
 		icon:icons[3,2]
