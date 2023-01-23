@@ -146,24 +146,44 @@ Buildings
 		req:600 taler:earned
 	
 	*currywurst|currywuerste
+		// Titel
 		name:Currywurst|Currywürste
-		desc:A lovely enclosure with plenty of green space.<//><b>Effect:</b><.>Produces 12 rabbits per second.
+		// Beschreibung
+		desc:Currywurst aus Bratwurst mit der allseits beliebten Soße.<//><b>Einnahmen:</b><.>Generiert 12 Taler pro Sekunde.
+		// Icon Grafik
 		icon:icons[3,3]
+		// Kosten für das erste Gebäude
 		cost:4000 taler
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 12 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:4000 taler:earned
 	
 	*schnitzel
+		// Titel
 		name:Schnitzel
-		desc:A wide open space full of shade and lush grass.<//><b>Effect:</b><.>Produces 90 rabbits per second.
+		// Beschreibung
+		desc:Die Schnitzel werden selbst geschnitten, geklopft und paniert.<//><b>Einnahmen:</b><.>Generiert 90 Taler pro Sekunde.
+		// Icon Grafik
 		icon:icons[3,4]
+		// Kosten für das erste Gebäude
 		cost:20000 taler
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
 		on tick:yield 90 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:20000 taler:earned
 	
 	*veggie|veggies
 		name:Veggie|Veggies
-		desc:Eine kleine Auswahl an vegetarischem Finger-Food.<//><b>Effect:</b><.>Produces 300 rabbits per second.
+		desc:Eine kleine Auswahl an vegetarischem Finger-Food.<//><b>Einnahmen:</b><.>Generiert 300 Taler pro Sekunde.
 		icon:icons[3,5]
 		cost:200000 taler, 1 GoldenePommes
 		on tick:yield 300 taler
@@ -171,7 +191,7 @@ Buildings
 		
 	*burger
 		name:Burger
-		desc:A bustling little city, populated with busy rabbits.<//><b>Effect:</b><.>Produces 1000 rabbits per second.
+		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
 		icon:icons[3,6]
 		cost:3000000 taler, 4 GoldenePommes
 		on tick:yield 1000 taler
@@ -179,7 +199,7 @@ Buildings
 		
 	*kesselfleisch
 		name:Kesselfleisch
-		desc:An ornate palace standing on the moon, ruled by taler kings and queens and staffed with royal taler guards.<//><b>Effect:</b><.>Produces 4000 rabbits per second.
+		desc:Eine Spezialität, die man nur ganz selten bekommt. Bestes Fleisch vom Metzger wird selbst zubereitet.<//><b>Einnahmen:</b><.>Generiert 4.000 Taler pro Sekunde.
 		icon:icons[3,7]
 		cost:70000000 taler, 16 GoldenePommes
 		on tick:yield 4000 taler
