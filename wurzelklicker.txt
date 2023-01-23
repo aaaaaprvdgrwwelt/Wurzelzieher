@@ -144,8 +144,8 @@ Buildings
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:600 taler:earned
 	
-	*pen|pens
-		name:Rabbit pen|Rabbit pens
+	*currywurst|currywuerste
+		name:Currywurst|Currywürste
 		desc:A lovely enclosure with plenty of green space.<//><b>Effect:</b><.>Produces 12 rabbits per second.
 		icon:icons[3,3]
 		cost:4000 taler
@@ -323,21 +323,21 @@ Upgrades
 		
 	*buildingUpgrade4
 		name:Pretty fences
-		desc:Just the right size so your taler can peek through but not hop over!<//><b>Effect:</b><.>rabbit pen production x2<.>rabbit meadow production x2
+		desc:Just the right size so your taler can peek through but not hop over!<//><b>Effect:</b><.>Currywurst production x2<.>rabbit meadow production x2
 		icon:icons[2,0] icons[3,3]
 		cost:50000 taler
-		passive:multiply yield of pen by 2
+		passive:multiply yield of currywurst by 2
 		passive:multiply yield of meadow by 2
-		req:(pens>=10 or meadows>=10)
+		req:(currywuerste>=10 or meadows>=10)
 		
 	*buildingUpgrade5
 		name:taler playground
-		desc:If your taler are outside, they might as well get some exercise!<//><b>Effect:</b><.>rabbit pen production x2<.>rabbit meadow production x2
+		desc:If your taler are outside, they might as well get some exercise!<//><b>Effect:</b><.>Currywurst production x2<.>rabbit meadow production x2
 		icon:icons[2,0] icons[3,4]
 		cost:5000000 taler
-		passive:multiply yield of pen by 2
+		passive:multiply yield of currywurst by 2
 		passive:multiply yield of meadow by 2
-		req:(pens>=50 or meadows>=50)
+		req:(currywuerste>=50 or meadows>=50)
 		
 	*buildingUpgrade6
 		name:taler TVs
@@ -384,7 +384,7 @@ Upgrades
 	
 	*independenceDay
 		name:Independence day
-		desc:Your taler are making their first step towards declaring their independence from the oppressive shackles of pens and cages.<//><b>Effect:</b><.>unlocks new buildings
+		desc:Your taler are making their first step towards declaring their independence from the oppressive shackles of Currywuerste and cages.<//><b>Effect:</b><.>unlocks new buildings
 		icon:icons[2,7]
 		cost:10 GoldenePommes
 		req:5 GoldenePommes:earned
