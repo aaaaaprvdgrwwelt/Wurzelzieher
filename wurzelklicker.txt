@@ -83,9 +83,9 @@ Shinies
 // Salat (Beilagensalat -> Salatteller -> Salatteller mit Putenstreifen)
 // Bratwurst (Bratwurst im Brötchen -> Bratwurst im Krautweck -> Bratwurst mit Pommes)
 // Currywurst (Currywurst mit Brötchen -> Currywurst mit Pommes -> Currywurst spezial)
-// Burger (Burger -> Käseburger -> Burger-Menu)
 // Schnitzel (Schnitzel -> Schnitzel mit Pilzrahmsoße -> Käseschnitzel)
 // Vegetarisch (Veggie-Burger -> Veggie-Teller)
+// Burger (Burger -> Käseburger -> Burger-Menu)
 Buildings
 	*TEMPLATE
 		on click:anim glow
@@ -152,8 +152,8 @@ Buildings
 		on tick:yield 12 taler
 		req:4000 taler:earned
 	
-	*meadow|meadows
-		name:Rabbit meadow|Rabbit meadows
+	*schnitzel
+		name:Schnitzel
 		desc:A wide open space full of shade and lush grass.<//><b>Effect:</b><.>Produces 90 rabbits per second.
 		icon:icons[3,4]
 		cost:20000 taler
@@ -323,21 +323,21 @@ Upgrades
 		
 	*buildingUpgrade4
 		name:Pretty fences
-		desc:Just the right size so your taler can peek through but not hop over!<//><b>Effect:</b><.>Currywurst production x2<.>rabbit meadow production x2
+		desc:Just the right size so your taler can peek through but not hop over!<//><b>Effect:</b><.>Currywurst production x2<.>Schnitzel production x2
 		icon:icons[2,0] icons[3,3]
 		cost:50000 taler
 		passive:multiply yield of currywurst by 2
-		passive:multiply yield of meadow by 2
-		req:(currywuerste>=10 or meadows>=10)
+		passive:multiply yield of schnitzel by 2
+		req:(currywuerste>=10 or schnitzel>=10)
 		
 	*buildingUpgrade5
 		name:taler playground
-		desc:If your taler are outside, they might as well get some exercise!<//><b>Effect:</b><.>Currywurst production x2<.>rabbit meadow production x2
+		desc:If your taler are outside, they might as well get some exercise!<//><b>Effect:</b><.>Currywurst production x2<.>Schnitzel production x2
 		icon:icons[2,0] icons[3,4]
 		cost:5000000 taler
 		passive:multiply yield of currywurst by 2
-		passive:multiply yield of meadow by 2
-		req:(currywuerste>=50 or meadows>=50)
+		passive:multiply yield of schnitzel by 2
+		req:(currywuerste>=50 or schnitzel>=50)
 		
 	*buildingUpgrade6
 		name:taler TVs
