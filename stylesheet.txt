@@ -104,8 +104,8 @@
 	top:50%;
 	width:95px;
 	height:120px;
-	margin-left:-128px;
-	margin-top:-128px;
+	margin-left:0px;
+	margin-top:0px;
 	background-color:transparent;
 	box-shadow:none;
 	border:none;
