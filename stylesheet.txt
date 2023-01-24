@@ -175,7 +175,7 @@
 
 
 /* Klasse smallButton */
-.thing.smallButton
+.smallButton
 {
 	position:absolute;
 	left:50%;
@@ -188,13 +188,11 @@
 	box-shadow:none;
 	border:none;
 }
-.thing.smallButton:hover{background:transparent;}
-
-.thing.smallButton {transform:scale(1);transition:transform 0.05s ease-out;}
-.thing.smallButton:hover {transform:scale(1.02);}
-.thing.smallButton:active {transform:scale(0.98);}
-
-.thing.smallButton
+.smallButton:hover{background:transparent;}
+.smallButton {transform:scale(1);transition:transform 0.05s ease-out;}
+.smallButton:hover {transform:scale(1.02);}
+.smallButton:active {transform:scale(0.98);}
+.smallButton
 {
 	position:absolute;
 	margin:0px;
