@@ -13,7 +13,7 @@ Settings
 	building cost increase:110%
 	// Für den Verkauf eines Gebäudes erhält man 75% des Wertes
 	building cost refund:75%
-	// https://openclipart.org/detail/271892/medieval-design // https://openclipart.org/detail/297068/late-for-work-2
+	// https://openclipart.org/detail/271892/medieval-design // https://openclipart.org/detail/297068/late-for-work-2 // Pommes: https://www.publicdomainpictures.net/en/free-download.php?image=french-fries&id=230994
 	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/wurzelIcons.png
 	stylesheet:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/stylesheet.txt
 
@@ -50,6 +50,22 @@ Resources
 		hidden when 0
 		
 Shinies
+
+	*GoldnerLaeufer
+		on click:log Woop
+		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
+		movement:onLeft moveRight fade
+		// Dauer bis zum Erscheinen mindestens (sec)
+		frequency:1
+		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
+		frequency variation:19
+		// Dauer, die die Grafik angezeigt wird (sec)
+		duration: 10
+		// Grafik. Quelle: https://www.animatedimages.org/img-animated-running-image-0029-191787.htm
+		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn_gold.gif
+
+
+
 	*LadyinRed
 		on click:log Woop
 		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
