@@ -51,7 +51,7 @@ Resources
 		
 Shinies
 
-	*GoldnerLaeufer
+	*GoldenerLaeufer
 		on click:log Woop
 		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
 		movement:onLeft moveRight fade
@@ -62,7 +62,7 @@ Shinies
 		// Dauer, die die Grafik angezeigt wird (sec)
 		duration: 100
 		// Grafik. Quelle: https://www.animatedimages.org/img-animated-running-image-0029-191787.htm
-		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn_gold.gif
+		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn_rot.gif
 		class:smallButton
 
 
