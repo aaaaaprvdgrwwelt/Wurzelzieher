@@ -63,6 +63,7 @@ Shinies
 		duration: 10
 		// Grafik. Quelle: https://www.animatedimages.org/img-animated-running-image-0029-191787.htm
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn_gold.gif
+		class:smallButton
 
 
 
