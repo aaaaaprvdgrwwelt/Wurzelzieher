@@ -60,7 +60,7 @@ Shinies
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
 		frequency variation:19
 		// Dauer, die die Grafik angezeigt wird (sec)
-		duration: 20
+		duration: 10
 		// Grafik. Quelle: https://www.animatedimages.org/img-animated-running-image-0029-191787.htm
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn_rot.gif
 		class:bigButton
