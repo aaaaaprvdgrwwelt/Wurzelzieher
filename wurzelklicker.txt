@@ -54,7 +54,7 @@ Shinies
 	*Kartoffel
 		on click:log Woop
 		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
-		movement:anywhere wiggle grow
+		movement:anywhere wiggle grow fade
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
