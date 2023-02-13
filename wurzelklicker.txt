@@ -68,7 +68,7 @@ Shinies
 			$boost=1
 			if (have clover) $boost=4
 			$amount=1*$boost
-			toast Die Kartoffel wurde zu <//><b>[$amount] goldenen Pommes verarbeitet</b>!
+			toast Die Kartoffel wurde zu <//><b>[$amount] goldene|goldenen Pommes verarbeitet</b>!
 			yield $amount GoldenePommes
 		end
 
