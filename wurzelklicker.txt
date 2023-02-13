@@ -64,7 +64,10 @@ Shinies
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=91308&picture=potato-face
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/Kartoffel.png
 		class:bigButton
-
+		on click:
+			$boost=1
+			if (have clover) $boost=4
+		end
 
 
 	*LadyinRed
@@ -77,7 +80,7 @@ Shinies
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
 		frequency variation:29
 		// Dauer, die die Grafik angezeigt wird (sec)
-		duration: 12
+		duration: 10
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
 		//icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn.gif
