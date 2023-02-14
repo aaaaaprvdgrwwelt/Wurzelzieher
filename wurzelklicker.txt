@@ -68,7 +68,7 @@ Shinies
 			$boost=1
 			if (have clover) $boost=4
 			$amount=1*$boost
-			toast Die Kartoffel wurde zu <//><b>[$amount] goldene|goldenen Pommes verarbeitet</b>!
+			toast Die Kartoffel wurde zu <//><b>[$amount] goldenen Pommes verarbeitet</b>!
 			yield $amount GoldenePommes
 		end
 
@@ -76,8 +76,7 @@ Shinies
 	*LadyinRed
 		on click:log Woop
 		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
-		//movement:onRight moveLeft fade bounce:0.05
-		movement:onLeft moveRight fade
+		movement:onRight moveLeft fade bounce:0.05
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
@@ -85,8 +84,7 @@ Shinies
 		// Dauer, die die Grafik angezeigt wird (sec)
 		duration: 10
 		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=473923&picture=red-dress-woman-evening-dress
-		//icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red2.png
-		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/renn.gif
+		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red.png
 		class:bigButton
 		on click:
 			$boost=1
@@ -105,10 +103,11 @@ Shinies
 
 // Gebäude
 // Pommes (Tüte Pommes -> Pommesteller -> Pommesteller rot/weiß)
+// Brot (Käsebrot -> Belegte Laugenstange -> Belegtes Dinkel-Körnerbrötchen)
 // Salat (Beilagensalat -> Salatteller -> Salatteller mit Putenstreifen)
 // Bratwurst (Bratwurst im Brötchen -> Bratwurst im Krautweck -> Bratwurst mit Pommes)
 // Currywurst (Currywurst mit Brötchen -> Currywurst mit Pommes -> Currywurst spezial)
-// Schnitzel (Schnitzel -> Schnitzel mit Pilzrahmsoße -> Käseschnitzel)
+// Schnitzel (Schnitzelbrot -> Schnitzel mit Pilzrahmsoße -> Käseschnitzel)
 // Veggies (Veggie-Burger -> Veggie-Teller -> Großer veganer Teller)
 // Burger (Burger -> Käseburger -> Burger-Menu)
 // Kesselfleisch (Kesselfleisch -> Familienkessel)
