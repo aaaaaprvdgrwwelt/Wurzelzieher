@@ -67,7 +67,7 @@ Shinies
 		on click:
 			$boost=1
 			if (have clover) $boost=4
-			$amount=1*$boost
+			$amount=random(1,5)*$boost
 			toast Der Kartoffelkopf wurde zu <//><b>[$amount] goldenen Pommes verarbeitet</b>!
 			yield $amount GoldenePommes
 		end
