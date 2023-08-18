@@ -89,10 +89,10 @@ Shinies
 			// Variable boost zuweisen
 			$boost=1
 //			if (have clover) $boost=4
-//			// Erhalte mindestens 7, oder den Wert zwischen 1 und 3 Minuten der Taler Produktion
-//			$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
-//			// Ausgabe bei Klick
-//			toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
+			// Erhalte mindestens 7, oder den Wert zwischen 1 und 3 Minuten der Taler Produktion
+			$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
+			// Ausgabe bei Klick
+			toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
 			// Amount Taler zuweisen
 			yield $amount taler
 		end
