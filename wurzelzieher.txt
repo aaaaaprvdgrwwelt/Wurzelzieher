@@ -88,16 +88,11 @@ Shinies
 		on click:
 			$boost=1
 			if (have clover) $boost=4
-//			if (chance(80%))
 				//get at least 7, or between 1 and 3 minutes of our taler production
 				$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
 				toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
 				yield $amount taler
-//			else
-//				$amount=1*$boost
-//				toast Die Dame in Rot schenkt dir<//><b>[$amount] goldene Pommes</b>!
-//				yield $amount GoldenePommes
-//			end
+			end
 		end
 
 // Gebäude
