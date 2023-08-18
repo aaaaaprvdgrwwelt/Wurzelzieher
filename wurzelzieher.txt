@@ -452,8 +452,8 @@ Upgrades
 		cost:1 GoldenePommes
 		req:1 GoldenePommes:earned
 		
-	*FlotteLady
-		name:FLotte Lady
+	*FlotteLotte
+		name:FLotte Lotte
 		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
 		icon:icons[2,6]
 		passive:multiply frequency of LadyinRed by 0.7
