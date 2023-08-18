@@ -86,7 +86,7 @@ Shinies
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/lady-in-red.png
 		class:bigButton
 		on click:
-			Variable boost initialisieren
+			// Variable boost initialisieren
 			$boost=1
 			if (have clover) $boost=4
 			// Erhalte mindestens 7, oder den Wert zwischen 1 und 3 Minuten der Taler Produktion
