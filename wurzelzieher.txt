@@ -51,24 +51,23 @@ Resources
 		
 Shinies
 
-	*Kartoffel
+	*Kartoffelkopf
 		on click:log Woop
-		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
+		// Starte irgendwo im Bildschirm, wackle, wachse, fade in und out
 		movement:anywhere wiggle grow fade
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
-		frequency variation:19
+		frequency variation:10
 		// Dauer, die die Grafik angezeigt wird (sec)
 		duration: 7
-		// Grafik. Quelle: https://www.publicdomainpictures.net/en/view-image.php?image=91308&picture=potato-face
-		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/Kartoffel.png
+		// Grafik
 		class:bigButton
 		on click:
 			$boost=1
 			if (have clover) $boost=4
-			$amount=1*$boost
-			toast Die Kartoffel wurde zu <//><b>[$amount] goldenen Pommes verarbeitet</b>!
+			$amount=random(1,5)*$boost
+			toast Der Kartoffelkopf wurde zu <//><b>[$amount] goldenen Pommes verarbeitet</b>!
 			yield $amount GoldenePommes
 		end
 
@@ -89,11 +88,11 @@ Shinies
 		on click:
 			$boost=1
 			if (have clover) $boost=4
-//			if (chance(25%))
-			//get at least 7, or between 1 and 3 minutes of our taler production
-			$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
-			toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
-			yield $amount taler
+//			if (chance(80%))
+				//get at least 7, or between 1 and 3 minutes of our taler production
+				$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
+				toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
+				yield $amount taler
 //			else
 //				$amount=1*$boost
 //				toast Die Dame in Rot schenkt dir<//><b>[$amount] goldene Pommes</b>!
