@@ -62,6 +62,7 @@ Shinies
 		// Dauer, die die Grafik angezeigt wird (sec)
 		duration: 7
 		// Grafik
+		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/Kartoffel.png
 		class:bigButton
 		on click:
 			$boost=1
