@@ -166,394 +166,395 @@ Buildings
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:600 taler:earned
 	
-	*currywurst|currywuerste
-		// Titel
-		name:Currywurst|Currywürste
-		// Beschreibung
-		desc:Currywurst aus Bratwurst mit der allseits beliebten Soße.<//><b>Einnahmen:</b><.>Generiert 12 Taler pro Sekunde.
-		// Icon Grafik
-		icon:icons[3,3]
-		// Kosten für das erste Gebäude
-		cost:4000 taler
-		// Jedes neue Gebäude wird x% teurer
-		cost increase:110%
-		// Rückzahlung beim Verkauf
-		cost refund:50%
-		// Einnahmen pro Tick (1 sec)
-		on tick:yield 12 taler
-		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:4000 taler:earned
-	
-	*schnitzel
-		// Titel
-		name:Schnitzel
-		// Beschreibung
-		desc:Die Schnitzel werden selbst geschnitten, geklopft und paniert.<//><b>Einnahmen:</b><.>Generiert 90 Taler pro Sekunde.
-		// Icon Grafik
-		icon:icons[3,4]
-		// Kosten für das erste Gebäude
-		cost:20000 taler
-		// Jedes neue Gebäude wird x% teurer
-		cost increase:110%
-		// Rückzahlung beim Verkauf
-		cost refund:50%
-		// Einnahmen pro Tick (1 sec)
-		on tick:yield 90 taler
-		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:20000 taler:earned
-	
-	*veggie|veggies
-		// Titel
-		name:Veggie|Veggies
-		// Beschreibung
-		desc:Eine kleine Auswahl an vegetarischem Finger-Food.<//><b>Einnahmen:</b><.>Generiert 300 Taler pro Sekunde.
-		// Icon Grafik
-		icon:icons[3,5]
-		// Kosten für das erste Gebäude
-		cost:200000 taler, 1 GoldenePommes
-		// Jedes neue Gebäude wird x% teurer
-		cost increase:110%
-		// Rückzahlung beim Verkauf
-		cost refund:50%
-		// Einnahmen pro Tick (1 sec)
-		on tick:yield 300 taler
-		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:200000 taler:earned and independenceDay
-		
-	*burger
-		// Titel
-		name:Burger
-		// Beschreibung
-		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
-		// Icon Grafik
-		icon:icons[3,6]
-		// Kosten für das erste Gebäude
-		cost:3000000 taler, 4 GoldenePommes
-		// Jedes neue Gebäude wird x% teurer
-		cost increase:110%
-		// Rückzahlung beim Verkauf
-		cost refund:50%
-		// Einnahmen pro Tick (1 sec)
-		on tick:yield 1000 taler
-		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:3000000 taler:earned and independenceDay
-		
-	*kesselfleisch
-		// Titel
-		name:Kesselfleisch
-		// Beschreibung
-		desc:Eine Spezialität, die man nur ganz selten bekommt. Bestes Fleisch vom Metzger wird selbst zubereitet.<//><b>Einnahmen:</b><.>Generiert 4.000 Taler pro Sekunde.
-		// Icon Grafik
-		icon:icons[3,7]
-		// Kosten für das erste Gebäude
-		cost:70000000 taler, 16 GoldenePommes
-		// Jedes neue Gebäude wird x% teurer
-		cost increase:110%
-		// Rückzahlung beim Verkauf
-		cost refund:50%
-		// Einnahmen pro Tick (1 sec)
-		on tick:yield 4000 taler
-		on tick:if (have moonGardens) yield 0.01 GoldenePommes
-		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:70000000 taler:earned and independenceDay
-		
-	*inselparadies
-		// Titel
-		name:Altmain Inselparadies
-		// Anzuzeigender Text
-		text:Altmain Inselparadies ([this]%)
-		// Beschreibung
-		desc:Die Outdoor-Gastronomie an der Mainschleife. Die vielen Hütten aufzubauen und Technik zu installieren kostet enormen Aufwand und Zeit.<//><b>Das Inselparadies ist zu [this]% aufgebaut.</b>
-		// Icon Grafik
-		icon:icons[3,8]
-		// Kosten für das erste Gebäude
-		cost:300000000 taler, 100 GoldenePommes
-		// Jedes neue Gebäude wird x% teurer
-		cost increase:105%
-		// Rückzahlung beim Verkauf
-		cost refund:50%
-		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:70000000 taler:earned and independenceDay
-		// Maximale Anzahl an möglichen Gebäuden
-		limit:100
-
-
-
-Upgrades
-	*TEMPLATE
-		on click:anim glow
-
-	*spaten
-		name:Spaten
-		desc:Mit dem Spaten fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
-		icon:icons[1,1]
-		cost:100 taler
-		passive:increase taler yield of wurzelButton by 1
-		req:10 taler:earned
-		
-	*spinach
-		name:Spinach
-		desc:Big tasty leaves, perfect for hungry taler.<//><b>Effect:</b><.>+1 taler/click
-		icon:icons[1,2]
-		cost:200 taler
-		passive:increase taler yield of wurzelButton by 1
-		req:50 taler:earned
-		
-	*lettuce
-		name:Lettuce
-		desc:Frilly greens loved by all taler.<//><b>Effect:</b><.>+1 taler/click
-		icon:icons[1,3]
-		cost:400 taler
-		passive:increase taler yield of wurzelButton by 1
-		req:200 taler:earned
-		
-	*broccoli
-		name:Broccoli
-		desc:Crunchy greens that look like little trees.<//><b>Effect:</b><.>taler/click x2<.>taler production +5%
-		icon:icons[1,4]
-		cost:3000 taler
-		passive:multiply taler yield of wurzelButton by 2
-		passive:multiply yield of taler by 1.05
-		req:1000 taler:earned
-		
-	*apple
-		name:Apple
-		desc:Nice pieces of juicy red apples.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
-		icon:icons[1,5]
-		cost:10000 taler
-		passive:multiply taler yield of wurzelButton by 1.5
-		passive:multiply yield of taler by 1.05
-		req:1000 taler:earned
-		
-	*radish
-		name:Radish
-		desc:Purple, crunchy, and strangely spicy.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
-		icon:icons[1,6]
-		cost:50000 taler
-		passive:multiply taler yield of wurzelButton by 1.5
-		passive:multiply yield of taler by 1.05
-		req:10000 taler:earned
-		
-	*mint
-		name:Mint
-		desc:Tasty, and gives your taler a lovely breath.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
-		icon:icons[1,7]
-		cost:100000 taler
-		passive:multiply taler yield of wurzelButton by 1.5
-		passive:multiply yield of taler by 1.05
-		req:50000 taler:earned
-		
-	*chard
-		name:Chard
-		desc:Broad leaves that make for a tasty salad.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
-		icon:icons[1,8]
-		cost:500000 taler
-		passive:multiply taler yield of wurzelButton by 1.5
-		passive:multiply yield of taler by 1.05
-		req:100000 taler:earned
-		
-	*cherry
-		name:Cherry
-		desc:Your taler look like little vampires when they start munching on these!<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
-		icon:icons[1,9]
-		cost:1000000 taler
-		passive:multiply taler yield of wurzelButton by 1.5
-		passive:multiply yield of taler by 1.05
-		req:500000 taler:earned
-		
-	*carrot
-		name:Carrot
-		desc:The quintessential rabbit food! Crunchy, orange, and perfect.<//><b>Effect:</b><.>taler/click x2<.>taler production +10%
-		icon:icons[1,0]
-		cost:100000000 taler
-		passive:multiply taler yield of wurzelButton by 2
-		passive:multiply yield of taler by 1.1
-		req:1000000 taler:earned
-	
-	//building upgrades
-	
-	*buildingUpgrade1
-		name:Sippy bottles
-		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
-		icon:icons[2,0] icons[3,0]
-		cost:1000 taler
-		passive:multiply yield of pommes by 2
-		passive:multiply yield of salat by 2
-		passive:multiply yield of bratwurst by 2
-		req:(pommes>=10 or salate>=10 or bratwuerste>=10)
-		
-	*buildingUpgrade2
-		name:Prime grade hay
-		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
-		icon:icons[2,0] icons[3,1]
-		cost:100000 taler
-		passive:multiply yield of pommes by 2
-		passive:multiply yield of salat by 2
-		passive:multiply yield of bratwurst by 2
-		req:(pommes>=50 or salate>=50 or bratwuerste>=50)
-		
-	*buildingUpgrade3
-		name:Shredded newspapers
-		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
-		icon:icons[2,0] icons[3,2]
-		cost:5000000 taler
-		passive:multiply yield of pommes by 2
-		passive:multiply yield of salat by 2
-		passive:multiply yield of bratwurst by 2
-		req:(pommes>=100 or salate>=100 or bratwuerste>=100)
-		
-	*buildingUpgrade4
-		name:Pretty fences
-		desc:Just the right size so your taler can peek through but not hop over!<//><b>Effect:</b><.>Currywurst production x2<.>Schnitzel production x2
-		icon:icons[2,0] icons[3,3]
-		cost:50000 taler
-		passive:multiply yield of currywurst by 2
-		passive:multiply yield of schnitzel by 2
-		req:(currywuerste>=10 or schnitzel>=10)
-		
-	*buildingUpgrade5
-		name:taler playground
-		desc:If your taler are outside, they might as well get some exercise!<//><b>Effect:</b><.>Currywurst production x2<.>Schnitzel production x2
-		icon:icons[2,0] icons[3,4]
-		cost:5000000 taler
-		passive:multiply yield of currywurst by 2
-		passive:multiply yield of schnitzel by 2
-		req:(currywuerste>=50 or schnitzel>=50)
-		
-	*buildingUpgrade6
-		name:taler TVs
-		desc:Televisions that broadcast taler cartoons, taler sitcoms, and taler news bulletins.<//><b>Effect:</b><.>Veggie production x2<.>Burger production x2
-		icon:icons[2,0] icons[3,5]
-		cost:1000000 taler
-		passive:multiply yield of veggie by 2
-		passive:multiply yield of burger by 2
-		req:(veggies>=10 or burger>=10)
-		
-	*buildingUpgrade7
-		name:Wee little taler cars
-		desc:Your taler drive around in these. How nice!<//><b>Effect:</b><.>Veggie production x2<.>Burger production x2
-		icon:icons[2,0] icons[3,6]
-		cost:500000000 taler
-		passive:multiply yield of veggie by 2
-		passive:multiply yield of burger by 2
-		req:(veggies>=50 or burger>=50)
-		
-	*buildingUpgrade8
-		name:Soothing moon crystals
-		desc:Just really nice to be around.<//><b>Effect:</b><.>Kesselfleisch production x2
-		icon:icons[2,0] icons[3,7]
-		cost:1000000000 taler
-		passive:multiply yield of kesselfleisch by 2
-		req:10 kesselfleisch
-	
-	// Goldene Pommes upgrades
-
-	*GoldenerDaumen
-		name:Goldener Daumen
-		desc:Mit dem goldenen Daumen bist du in der Lage, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 1%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
-		icon:icons[2,5]
-		cost:1 GoldenePommes
-		req:1 GoldenePommes:earned
-		
-	*FlotteLotte
-		name:FLotte Lotte
-		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
-		icon:icons[2,6]
-		passive:multiply frequency of LadyinRed by 0.7
-		cost:5 GoldenePommes
-		req:1 GoldenePommes:earned
-	
-	*independenceDay
-		name:Independence day
-		desc:Your taler are making their first step towards declaring their independence from the oppressive shackles of Currywuerste and cages.<//><b>Effect:</b><.>unlocks new buildings
-		icon:icons[2,7]
-		cost:10 GoldenePommes
-		req:5 GoldenePommes:earned
-		
-	*clover
-		name:Clover
-		desc:A delicious herb that tastes lucky.<//><b>Effect:</b><.>lucky taler effects are 4 times more powerful
-		icon:icons[2,8]
-		cost:100 GoldenePommes
-		req:50 GoldenePommes:earned
-		
-	*moonGardens
-		name:Moon gardens
-		desc:The royal botanists in your kesselfleisch have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>kesselfleisch now produce 1 goldene Pommes every 100 seconds
-		icon:icons[2,9]
-		cost:100 GoldenePommes
-		req:50 GoldenePommes:earned
-		
-Achievements
-	*TEMPLATE
-		on click:anim glow
-		
-	*talerAchiev1
-		name:Run rabbit run
-		desc:Have <b>1</b> taler.
-		req:1 taler
-		icon:icons[2,4] icons[0,2] icons[0,6]
-	*talerAchiev2
-		name:talerthome videos
-		desc:Have <b>1000</b> taler.
-		req:1000 taler
-		icon:icons[2,4] icons[0,3] icons[0,6]
-	*talerAchiev3
-		name:You got buns, hun
-		desc:Have <b>1000000</b> taler.
-		req:10000000 taler
-		icon:icons[2,4] icons[0,4] icons[0,6]
-		
-	*clickAchiev1
-		name:That tickles
-		desc:Click the taler <b>10</b> times.
-		req:10 wurzelButton clicks
-		icon:icons[2,2] icons[0,2] icons[0,6]
-	*clickAchiev2
-		name:Don't squeeze me I'll fart
-		desc:Click the taler <b>100</b> times.
-		req:100 wurzelButton clicks
-		icon:icons[2,2] icons[0,3] icons[0,6]
-	*clickAchiev3
-		name:You're cruising for a bruising, dude
-		desc:Click the taler <b>2000</b> times.
-		req:2000 wurzelButton clicks
-		icon:icons[2,2] icons[0,4] icons[0,6]
-		
-	*talerPsAchiev1
-		name:Be vewy vewy quiet
-		desc:Produce <b>10</b> taler per second.
-		req:10 taler per second
-		icon:icons[2,3] icons[0,2] icons[0,6]
-	*talerPsAchiev2
-		name:Hop and a skip
-		desc:Produce <b>1000</b> taler per second.
-		req:1000 taler per second
-		icon:icons[2,3] icons[0,3] icons[0,6]
-	*talerPsAchiev3
-		name:Go forth and multiply
-		desc:Produce <b>100000</b> taler per second.
-		req:100000 taler per second
-		icon:icons[2,3] icons[0,4] icons[0,6]
-		
-	*carrotAchiev1
-		name:Isn't it neat
-		desc:Have <b>1</b> goldene Pommes.
-		req:1 GoldenePommes
-		icon:icons[0,1] icons[0,2]
-	*carrotAchiev2
-		name:All that glitters
-		desc:Have <b>100</b> goldene Pommes.
-		req:100 GoldenePommes
-		icon:icons[0,1] icons[0,3]
-	*carrotAchiev3
-		name:Zero nutritional value
-		desc:Have <b>1000</b> goldene Pommes.
-		req:1000 GoldenePommes
-		icon:icons[0,1] icons[0,4]
-	
-	*inselparadiesAchiev
-		name:Freedom!
-		desc:Baue das <b>Altmain inselparadies</b> auf.<//>Das wars. Du hast das Ziel erreicht!
-		req:100 inselparadies
-		icon:icons[3,8] icons[0,4]
+//	*currywurst|currywuerste
+//		// Titel
+//		name:Currywurst|Currywürste
+//		// Beschreibung
+//		desc:Currywurst aus Bratwurst mit der allseits beliebten Soße.<//><b>Einnahmen:</b><.>Generiert 12 Taler pro Sekunde.
+//		// Icon Grafik
+//		icon:icons[3,3]
+//		// Kosten für das erste Gebäude
+//		cost:4000 taler
+//		// Jedes neue Gebäude wird x% teurer
+//		cost increase:110%
+//		// Rückzahlung beim Verkauf
+//		cost refund:50%
+//		// Einnahmen pro Tick (1 sec)
+//		on tick:yield 12 taler
+//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+//		req:4000 taler:earned
+//	
+//	*schnitzel
+//		// Titel
+//		name:Schnitzel
+//		// Beschreibung
+//		desc:Die Schnitzel werden selbst geschnitten, geklopft und paniert.<//><b>Einnahmen:</b><.>Generiert 90 Taler pro Sekunde.
+//		// Icon Grafik
+//		icon:icons[3,4]
+//		// Kosten für das erste Gebäude
+//		cost:20000 taler
+//		// Jedes neue Gebäude wird x% teurer
+//		cost increase:110%
+//		// Rückzahlung beim Verkauf
+//		cost refund:50%
+//		// Einnahmen pro Tick (1 sec)
+//		on tick:yield 90 taler
+//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+//		req:20000 taler:earned
+//	
+//	*veggie|veggies
+//		// Titel
+//		name:Veggie|Veggies
+//		// Beschreibung
+//		desc:Eine kleine Auswahl an vegetarischem Finger-Food.<//><b>Einnahmen:</b><.>Generiert 300 Taler pro Sekunde.
+//		// Icon Grafik
+//		icon:icons[3,5]
+//		// Kosten für das erste Gebäude
+//		cost:200000 taler, 1 GoldenePommes
+//		// Jedes neue Gebäude wird x% teurer
+//		cost increase:110%
+//		// Rückzahlung beim Verkauf
+//		cost refund:50%
+//		// Einnahmen pro Tick (1 sec)
+//		on tick:yield 300 taler
+//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+//		req:200000 taler:earned and independenceDay
+//		
+//	*burger
+//		// Titel
+//		name:Burger
+//		// Beschreibung
+//		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
+//		// Icon Grafik
+//		icon:icons[3,6]
+//		// Kosten für das erste Gebäude
+//		cost:3000000 taler, 4 GoldenePommes
+//		// Jedes neue Gebäude wird x% teurer
+//		cost increase:110%
+//		// Rückzahlung beim Verkauf
+//		cost refund:50%
+//		// Einnahmen pro Tick (1 sec)
+//		on tick:yield 1000 taler
+//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+//		req:3000000 taler:earned and independenceDay
+//		
+//	*kesselfleisch
+//		// Titel
+//		name:Kesselfleisch
+//		// Beschreibung
+//		desc:Eine Spezialität, die man nur ganz selten bekommt. Bestes Fleisch vom Metzger wird selbst zubereitet.<//><b>Einnahmen:</b><.>Generiert 4.000 Taler pro Sekunde.
+//		// Icon Grafik
+//		icon:icons[3,7]
+//		// Kosten für das erste Gebäude
+//		cost:70000000 taler, 16 GoldenePommes
+//		// Jedes neue Gebäude wird x% teurer
+//		cost increase:110%
+//		// Rückzahlung beim Verkauf
+//		cost refund:50%
+//		// Einnahmen pro Tick (1 sec)
+//		on tick:yield 4000 taler
+//		on tick:if (have moonGardens) yield 0.01 GoldenePommes
+//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+//		req:70000000 taler:earned and independenceDay
+//		
+//	*inselparadies
+//		// Titel
+//		name:Altmain Inselparadies
+//		// Anzuzeigender Text
+//		text:Altmain Inselparadies ([this]%)
+//		// Beschreibung
+//		desc:Die Outdoor-Gastronomie an der Mainschleife. Die vielen Hütten aufzubauen und Technik zu installieren kostet enormen Aufwand und Zeit.<//><b>Das Inselparadies ist zu [this]% aufgebaut.</b>
+//		// Icon Grafik
+//		icon:icons[3,8]
+//		// Kosten für das erste Gebäude
+//		cost:300000000 taler, 100 GoldenePommes
+//		// Jedes neue Gebäude wird x% teurer
+//		cost increase:105%
+//		// Rückzahlung beim Verkauf
+//		cost refund:50%
+//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+//		req:70000000 taler:earned and independenceDay
+//		// Maximale Anzahl an möglichen Gebäuden
+//		limit:100
+//
+//
+//
+//Upgrades
+//	*TEMPLATE
+//		on click:anim glow
+//
+//	*spaten
+//		name:Spaten
+//		desc:Mit dem Spaten fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
+//		icon:icons[1,1]
+//		cost:100 taler
+//		passive:increase taler yield of wurzelButton by 1
+//		req:10 taler:earned
+//		
+//	*spinach
+//		name:Spinach
+//		desc:Big tasty leaves, perfect for hungry taler.<//><b>Effect:</b><.>+1 taler/click
+//		icon:icons[1,2]
+//		cost:200 taler
+//		passive:increase taler yield of wurzelButton by 1
+//		req:50 taler:earned
+//		
+//	*lettuce
+//		name:Lettuce
+//		desc:Frilly greens loved by all taler.<//><b>Effect:</b><.>+1 taler/click
+//		icon:icons[1,3]
+//		cost:400 taler
+//		passive:increase taler yield of wurzelButton by 1
+//		req:200 taler:earned
+//		
+//	*broccoli
+//		name:Broccoli
+//		desc:Crunchy greens that look like little trees.<//><b>Effect:</b><.>taler/click x2<.>taler production +5%
+//		icon:icons[1,4]
+//		cost:3000 taler
+//		passive:multiply taler yield of wurzelButton by 2
+//		passive:multiply yield of taler by 1.05
+//		req:1000 taler:earned
+//		
+//	*apple
+//		name:Apple
+//		desc:Nice pieces of juicy red apples.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
+//		icon:icons[1,5]
+//		cost:10000 taler
+//		passive:multiply taler yield of wurzelButton by 1.5
+//		passive:multiply yield of taler by 1.05
+//		req:1000 taler:earned
+//		
+//	*radish
+//		name:Radish
+//		desc:Purple, crunchy, and strangely spicy.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
+//		icon:icons[1,6]
+//		cost:50000 taler
+//		passive:multiply taler yield of wurzelButton by 1.5
+//		passive:multiply yield of taler by 1.05
+//		req:10000 taler:earned
+//		
+//	*mint
+//		name:Mint
+//		desc:Tasty, and gives your taler a lovely breath.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
+//		icon:icons[1,7]
+//		cost:100000 taler
+//		passive:multiply taler yield of wurzelButton by 1.5
+//		passive:multiply yield of taler by 1.05
+//		req:50000 taler:earned
+//		
+//	*chard
+//		name:Chard
+//		desc:Broad leaves that make for a tasty salad.<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
+//		icon:icons[1,8]
+//		cost:500000 taler
+//		passive:multiply taler yield of wurzelButton by 1.5
+//		passive:multiply yield of taler by 1.05
+//		req:100000 taler:earned
+//		
+//	*cherry
+//		name:Cherry
+//		desc:Your taler look like little vampires when they start munching on these!<//><b>Effect:</b><.>taler/click x1.5<.>taler production +5%
+//		icon:icons[1,9]
+//		cost:1000000 taler
+//		passive:multiply taler yield of wurzelButton by 1.5
+//		passive:multiply yield of taler by 1.05
+//		req:500000 taler:earned
+//		
+//	*carrot
+//		name:Carrot
+//		desc:The quintessential rabbit food! Crunchy, orange, and perfect.<//><b>Effect:</b><.>taler/click x2<.>taler production +10%
+//		icon:icons[1,0]
+//		cost:100000000 taler
+//		passive:multiply taler yield of wurzelButton by 2
+//		passive:multiply yield of taler by 1.1
+//		req:1000000 taler:earned
+//	
+//	//building upgrades
+//	
+//	*buildingUpgrade1
+//		name:Sippy bottles
+//		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
+//		icon:icons[2,0] icons[3,0]
+//		cost:1000 taler
+//		passive:multiply yield of pommes by 2
+//		passive:multiply yield of salat by 2
+//		passive:multiply yield of bratwurst by 2
+//		req:(pommes>=10 or salate>=10 or bratwuerste>=10)
+//		
+//	*buildingUpgrade2
+//		name:Prime grade hay
+//		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
+//		icon:icons[2,0] icons[3,1]
+//		cost:100000 taler
+//		passive:multiply yield of pommes by 2
+//		passive:multiply yield of salat by 2
+//		passive:multiply yield of bratwurst by 2
+//		req:(pommes>=50 or salate>=50 or bratwuerste>=50)
+//		
+//	*buildingUpgrade3
+//		name:Shredded newspapers
+//		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
+//		icon:icons[2,0] icons[3,2]
+//		cost:5000000 taler
+//		passive:multiply yield of pommes by 2
+//		passive:multiply yield of salat by 2
+//		passive:multiply yield of bratwurst by 2
+//		req:(pommes>=100 or salate>=100 or bratwuerste>=100)
+//		
+//	*buildingUpgrade4
+//		name:Pretty fences
+//		desc:Just the right size so your taler can peek through but not hop over!<//><b>Effect:</b><.>Currywurst production x2<.>Schnitzel production x2
+//		icon:icons[2,0] icons[3,3]
+//		cost:50000 taler
+//		passive:multiply yield of currywurst by 2
+//		passive:multiply yield of schnitzel by 2
+//		req:(currywuerste>=10 or schnitzel>=10)
+//		
+//	*buildingUpgrade5
+//		name:taler playground
+//		desc:If your taler are outside, they might as well get some exercise!<//><b>Effect:</b><.>Currywurst production x2<.>Schnitzel production x2
+//		icon:icons[2,0] icons[3,4]
+//		cost:5000000 taler
+//		passive:multiply yield of currywurst by 2
+//		passive:multiply yield of schnitzel by 2
+//		req:(currywuerste>=50 or schnitzel>=50)
+//		
+//	*buildingUpgrade6
+//		name:taler TVs
+//		desc:Televisions that broadcast taler cartoons, taler sitcoms, and taler news bulletins.<//><b>Effect:</b><.>Veggie production x2<.>Burger production x2
+//		icon:icons[2,0] icons[3,5]
+//		cost:1000000 taler
+//		passive:multiply yield of veggie by 2
+//		passive:multiply yield of burger by 2
+//		req:(veggies>=10 or burger>=10)
+//		
+//	*buildingUpgrade7
+//		name:Wee little taler cars
+//		desc:Your taler drive around in these. How nice!<//><b>Effect:</b><.>Veggie production x2<.>Burger production x2
+//		icon:icons[2,0] icons[3,6]
+//		cost:500000000 taler
+//		passive:multiply yield of veggie by 2
+//		passive:multiply yield of burger by 2
+//		req:(veggies>=50 or burger>=50)
+//		
+//	*buildingUpgrade8
+//		name:Soothing moon crystals
+//		desc:Just really nice to be around.<//><b>Effect:</b><.>Kesselfleisch production x2
+//		icon:icons[2,0] icons[3,7]
+//		cost:1000000000 taler
+//		passive:multiply yield of kesselfleisch by 2
+//		req:10 kesselfleisch
+//	
+//	// Goldene Pommes upgrades
+//
+//	*GoldenerDaumen
+//		name:Goldener Daumen
+//		desc:Mit dem goldenen Daumen bist du in der Lage, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 1%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
+//		icon:icons[2,5]
+//		cost:1 GoldenePommes
+//		req:1 GoldenePommes:earned
+//		
+//	*FlotteLotte
+//		name:FLotte Lotte
+//		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
+//		icon:icons[2,6]
+//		passive:multiply frequency of LadyinRed by 0.7
+//		cost:5 GoldenePommes
+//		req:1 GoldenePommes:earned
+//	
+//	*independenceDay
+//		name:Independence day
+//		desc:Your taler are making their first step towards declaring their independence from the oppressive shackles of Currywuerste and cages.<//><b>Effect:</b><.>unlocks new buildings
+//		icon:icons[2,7]
+//		cost:10 GoldenePommes
+//		req:5 GoldenePommes:earned
+//		
+//	*clover
+//		name:Clover
+//		desc:A delicious herb that tastes lucky.<//><b>Effect:</b><.>lucky taler effects are 4 times more powerful
+//		icon:icons[2,8]
+//		cost:100 GoldenePommes
+//		req:50 GoldenePommes:earned
+//		
+//	*moonGardens
+//		name:Moon gardens
+//		desc:The royal botanists in your kesselfleisch have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>kesselfleisch now produce 1 goldene Pommes every 100 seconds
+//		icon:icons[2,9]
+//		cost:100 GoldenePommes
+//		req:50 GoldenePommes:earned
+//		
+//Achievements
+//	*TEMPLATE
+//		on click:anim glow
+//		
+//	*talerAchiev1
+//		name:Run rabbit run
+//		desc:Have <b>1</b> taler.
+//		req:1 taler
+//		icon:icons[2,4] icons[0,2] icons[0,6]
+//	*talerAchiev2
+//		name:talerthome videos
+//		desc:Have <b>1000</b> taler.
+//		req:1000 taler
+//		icon:icons[2,4] icons[0,3] icons[0,6]
+//	*talerAchiev3
+//		name:You got buns, hun
+//		desc:Have <b>1000000</b> taler.
+//		req:10000000 taler
+//		icon:icons[2,4] icons[0,4] icons[0,6]
+//		
+//	*clickAchiev1
+//		name:That tickles
+//		desc:Click the taler <b>10</b> times.
+//		req:10 wurzelButton clicks
+//		icon:icons[2,2] icons[0,2] icons[0,6]
+//	*clickAchiev2
+//		name:Don't squeeze me I'll fart
+//		desc:Click the taler <b>100</b> times.
+//		req:100 wurzelButton clicks
+//		icon:icons[2,2] icons[0,3] icons[0,6]
+//	*clickAchiev3
+//		name:You're cruising for a bruising, dude
+//		desc:Click the taler <b>2000</b> times.
+//		req:2000 wurzelButton clicks
+//		icon:icons[2,2] icons[0,4] icons[0,6]
+//		
+//	*talerPsAchiev1
+//		name:Be vewy vewy quiet
+//		desc:Produce <b>10</b> taler per second.
+//		req:10 taler per second
+//		icon:icons[2,3] icons[0,2] icons[0,6]
+//	*talerPsAchiev2
+//		name:Hop and a skip
+//		desc:Produce <b>1000</b> taler per second.
+//		req:1000 taler per second
+//		icon:icons[2,3] icons[0,3] icons[0,6]
+//	*talerPsAchiev3
+//		name:Go forth and multiply
+//		desc:Produce <b>100000</b> taler per second.
+//		req:100000 taler per second
+//		icon:icons[2,3] icons[0,4] icons[0,6]
+//		
+//	*carrotAchiev1
+//		name:Isn't it neat
+//		desc:Have <b>1</b> goldene Pommes.
+//		req:1 GoldenePommes
+//		icon:icons[0,1] icons[0,2]
+//	*carrotAchiev2
+//		name:All that glitters
+//		desc:Have <b>100</b> goldene Pommes.
+//		req:100 GoldenePommes
+//		icon:icons[0,1] icons[0,3]
+//	*carrotAchiev3
+//		name:Zero nutritional value
+//		desc:Have <b>1000</b> goldene Pommes.
+//		req:1000 GoldenePommes
+//		icon:icons[0,1] icons[0,4]
+//	
+//	*inselparadiesAchiev
+//		name:Freedom!
+//		desc:Baue das <b>Altmain inselparadies</b> auf.<//>Das wars. Du hast das Ziel erreicht!
+//		req:100 inselparadies
+//		icon:icons[3,8] icons[0,4]
+//
