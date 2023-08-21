@@ -298,17 +298,8 @@ Upgrades
 		name:Goldener Mittelfinger
 		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 2%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
 		icon:icons[2,5]
-		cost:10 GoldenePommes
-		req:5 GoldenePommes:earned
-
-
-	*Handschaufel
-		name:Handschaufel
-		desc:Mit der Handschaufel fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
-		icon:icons[1,1]
-		cost:100 taler
-		passive:increase taler yield of wurzelButton by 1
-		req:50 taler:earned
+		cost:100 GoldenePommes
+		req:75 GoldenePommes:earned
 
 	*Handschaufel
 		name:Handschaufel
