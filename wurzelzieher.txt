@@ -306,7 +306,7 @@ Upgrades
 	*FraenkischerHotDog
 		name:Bratwurst mit Sauerkraut im Brötchen
 		desc:Your taler can drink their fill!<//><b>Effekt:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
-		icon:icons[2,0] icons[3,0]
+		icon:icons[1,2]
 		cost:1000 taler
 		passive:multiply yield of bratwuerste by 2
 		req:(bratwuerste>=10)
