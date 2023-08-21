@@ -107,7 +107,7 @@ Shinies
 // Veggies (Veggie-Burger -> Veggie-Teller -> Großer veganer Teller)
 // Burger (Burger -> Käseburger -> Burger-Menu)
 // Kesselfleisch (Kesselfleisch -> Familienkessel)
-Speisen
+Buildings
 	*TEMPLATE
 		on click:anim glow
 
