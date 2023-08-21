@@ -311,6 +311,22 @@ Upgrades
 		passive:multiply yield of bratwuerste by 2
 		req:(bratwuerste>=10)
 
+	*Currywurst
+		name:Currywurst mit Pommes
+		desc:Die Bratwurst in Scheiben geschnitten mit Curry-Soße und Pommes.<//><b>Effekt:</b><.>Einkommen durch Bratwürste x 5
+		icon:icons[1,3]
+		cost:10000 taler
+		passive:multiply yield of bratwuerste by 5
+		req:(bratwuerste>=25)
+
+	*CurrywurstSpezial
+		name:Currywurst spezial mit Pommes
+		desc:Die Bratwurst in Scheiben geschnitten mit der besonders leckeren Wurzel-Soße und Pommes.<//><b>Effekt:</b><.>Einkommen durch Bratwürste x 12
+		icon:icons[1,3]
+		cost:100000 taler
+		passive:multiply yield of bratwuerste by 12
+		req:(bratwuerste>=50)
+
 //		
 //	*spinach
 //		name:Spinach
