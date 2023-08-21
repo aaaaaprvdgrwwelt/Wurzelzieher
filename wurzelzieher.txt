@@ -26,7 +26,7 @@ Buttons
 		desc:Klicke die Wurzel allen Ursprungs, um mehr Finanzen zu generieren. Die Wurzeln werden umgehend vom Großhändler gegen Bares eingetauscht.
 		on click:anim icon wobble
 		on click:yield 1 taler
-		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
+//		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/logo.png
 		no text
 		class:bigButton hasFlares
@@ -49,8 +49,8 @@ Resources
 		class:noBackground
 		hidden when 0
 		
-Shinies
 
+Shinies
 	*Kartoffelkopf
 		on click:log Woop
 		// Starte irgendwo im Bildschirm, wackle, wachse, fade in und out
@@ -71,7 +71,6 @@ Shinies
 			toast Der Kartoffelkopf wurde zu <//><b>[$amount] goldenen Pommes verarbeitet</b>!
 			yield $amount GoldenePommes
 		end
-
 
 	*LadyinRed
 		on click:log Woop
@@ -279,6 +278,7 @@ Buildings
 //
 //
 //
+
 Upgrades
 	*TEMPLATE
 		on click:anim glow
