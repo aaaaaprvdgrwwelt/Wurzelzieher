@@ -164,7 +164,10 @@ Buildings
 		on tick:yield 5 taler
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:600 taler:earned
-	
+
+
+
+
 //	*currywurst|currywuerste
 //		// Titel
 //		name:Currywurst|Currywürste
@@ -295,9 +298,18 @@ Upgrades
 		name:Goldener Daumen
 		desc:Mit dem goldenen Daumen bist du in der Lage, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 1%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
 		icon:icons[2,5]
-		cost:1 GoldenePommes
-		req:1 GoldenePommes:earned
+		cost:10 GoldenePommes
+		req:5 GoldenePommes:earned
 
+
+	//building upgrades
+	*FraenkischerHotDog
+		name:Bratwurst mit Sauerkraut im Brötchen
+		desc:Your taler can drink their fill!<//><b>Effekt:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
+		icon:icons[2,0] icons[3,0]
+		cost:1000 taler
+		passive:multiply yield of bratwuerste by 2
+		req:(bratwuerste>=10)
 
 //		
 //	*spinach
@@ -379,18 +391,6 @@ Upgrades
 //		passive:multiply yield of taler by 1.1
 //		req:1000000 taler:earned
 //	
-//	//building upgrades
-//	
-//	*buildingUpgrade1
-//		name:Sippy bottles
-//		desc:Your taler can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
-//		icon:icons[2,0] icons[3,0]
-//		cost:1000 taler
-//		passive:multiply yield of pommes by 2
-//		passive:multiply yield of salat by 2
-//		passive:multiply yield of bratwurst by 2
-//		req:(pommes>=10 or salate>=10 or bratwuerste>=10)
-//		
 //	*buildingUpgrade2
 //		name:Prime grade hay
 //		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
