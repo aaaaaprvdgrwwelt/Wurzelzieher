@@ -305,7 +305,7 @@ Upgrades
 	//building upgrades
 	*FraenkischerHotDog
 		name:Bratwurst mit Sauerkraut im Brötchen
-		desc:Your taler can drink their fill!<//><b>Effekt:</b><.>rabbit cage production x2<.>rabbit salat production x2<.>Bratwurst production x2
+		desc:Die Bratwurst im Dinkelteig-Brötchen mit leckerem Sauerkraut garniert.<//><b>Effekt:</b><.>Einkommen durch Bratwürste x 2
 		icon:icons[1,2]
 		cost:1000 taler
 		passive:multiply yield of bratwuerste by 2
