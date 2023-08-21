@@ -26,7 +26,8 @@ Buttons
 		desc:Klicke die Wurzel allen Ursprungs, um mehr Finanzen zu generieren. Die Wurzeln werden umgehend vom Großhändler gegen Bares eingetauscht.
 		on click:anim icon wobble
 		on click:yield 1 taler
-//		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
+		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
+		on click:if (have GoldenerMittelfinger and chance(0.5%)) yield random(1,5) GoldenePommes
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/logo.png
 		no text
 		class:bigButton hasFlares
@@ -286,14 +287,6 @@ Upgrades
 	*TEMPLATE
 		on click:anim glow
 
-	*Handspaten
-		name:Handspaten
-		desc:Mit dem Handspaten fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
-		icon:icons[1,1]
-		cost:100 taler
-		passive:increase taler yield of wurzelButton by 1
-		req:50 taler:earned
-
 	*GoldenerDaumen
 		name:Goldener Daumen
 		desc:Mit dem goldenen Daumen bist du in der Lage, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 1%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
@@ -301,6 +294,29 @@ Upgrades
 		cost:10 GoldenePommes
 		req:5 GoldenePommes:earned
 
+	*GoldenerMittelfinger
+		name:Goldener Mittelfinger
+		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 2%, mit einem Wurzelzieher eine goldene Pommes zu erzeugen.
+		icon:icons[2,5]
+		cost:10 GoldenePommes
+		req:5 GoldenePommes:earned
+
+
+	*Handschaufel
+		name:Handschaufel
+		desc:Mit der Handschaufel fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
+		icon:icons[1,1]
+		cost:100 taler
+		passive:increase taler yield of wurzelButton by 1
+		req:50 taler:earned
+
+	*Handschaufel
+		name:Handschaufel
+		desc:Mit der Handschaufel fällt das Wurzelziehen gleich so viel leichter als mit der bloßen Hand.<//><b>Effekt:</b><.>+1 Taler pro Klick.
+		icon:icons[1,1]
+		cost:100 taler
+		passive:increase taler yield of wurzelButton by 1
+		req:50 taler:earned
 
 	//building upgrades
 	*FraenkischerHotDog
