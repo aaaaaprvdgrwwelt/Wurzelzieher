@@ -297,8 +297,9 @@ Upgrades
 
 	*GoldenerMittelfinger
 		name:Goldener Mittelfinger
-		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 0,666%, mit einem Wurzelzieher 5 - 10 goldene Pommes zu erzeugen.
+		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 0,666%, mit einem Wurzelzieher 5 - 10 goldene Pommes zu erzeugen.<.>Der Kartoffelkopf erscheint 33% häufiger.
 		icon:icons[1,5]
+		passive:multiply frequency of Kartoffelkopf by 0.67
 		cost:100 GoldenePommes
 		req:75 GoldenePommes:earned
 
@@ -484,9 +485,9 @@ Upgrades
 //		
 //	*FlotteLotte
 //		name:FLotte Lotte
-//		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 30% häufiger
+//		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 33% häufiger
 //		icon:icons[2,6]
-//		passive:multiply frequency of LadyinRed by 0.7
+//		passive:multiply frequency of LadyinRed by 0.67
 //		cost:5 GoldenePommes
 //		req:1 GoldenePommes:earned
 //	
