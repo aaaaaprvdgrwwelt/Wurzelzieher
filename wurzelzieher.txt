@@ -336,6 +336,15 @@ Upgrades
 		passive:multiply yield of bratwuerste by 12
 		req:(bratwuerste>=50)
 
+	*Jaegerschnitzel
+		name:Schnitzel mit Pilzrahmsoße
+		desc:Das Schnitzel mit einer sahnig-cremigen Pilzrahm-Soße und Pommes.<//><b>Effekt:</b><.>Einkommen durch Schnitzel x 2
+		icon:icons[1,7]
+		cost:100000 taler
+		passive:multiply yield of Schnitzel by 2
+		req:(Schnitzel>=50)
+
+
 //		
 //	*spinach
 //		name:Spinach
