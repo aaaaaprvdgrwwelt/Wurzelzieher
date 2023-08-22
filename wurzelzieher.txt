@@ -27,7 +27,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 taler
 		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
-		on click:if (have GoldenerMittelfinger and chance(0.666%)) yield 100 GoldenePommes
+		on click:if (have GoldenerMittelfinger and chance(6.66%)) yield random (5,10) GoldenePommes
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/logo.png
 		no text
 		class:bigButton hasFlares
@@ -166,6 +166,24 @@ Buildings
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 		req:600 taler:earned
 
+	*schnitzel
+		// Titel
+		name:Schnitzel
+		// Beschreibung
+		desc:Die Schnitzel werden selbst geschnitten, geklopft und paniert.<//><b>Einnahmen:</b><.>Generiert 90 Taler pro Sekunde.
+		// Icon Grafik
+		icon:icons[1,6]
+		// Kosten für das erste Gebäude
+		cost:20000 taler
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
+		on tick:yield 90 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+		req:20000 taler:earned
+
 
 
 
@@ -187,23 +205,6 @@ Buildings
 //		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 //		req:4000 taler:earned
 //	
-//	*schnitzel
-//		// Titel
-//		name:Schnitzel
-//		// Beschreibung
-//		desc:Die Schnitzel werden selbst geschnitten, geklopft und paniert.<//><b>Einnahmen:</b><.>Generiert 90 Taler pro Sekunde.
-//		// Icon Grafik
-//		icon:icons[3,4]
-//		// Kosten für das erste Gebäude
-//		cost:20000 taler
-//		// Jedes neue Gebäude wird x% teurer
-//		cost increase:110%
-//		// Rückzahlung beim Verkauf
-//		cost refund:50%
-//		// Einnahmen pro Tick (1 sec)
-//		on tick:yield 90 taler
-//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-//		req:20000 taler:earned
 //	
 //	*veggie|veggies
 //		// Titel
@@ -296,7 +297,7 @@ Upgrades
 
 	*GoldenerMittelfinger
 		name:Goldener Mittelfinger
-		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 0,666%, mit einem Wurzelzieher 1 - 5 goldene Pommes zu erzeugen.
+		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 0,666%, mit einem Wurzelzieher 5 - 10 goldene Pommes zu erzeugen.
 		icon:icons[10,15]
 		cost:100 GoldenePommes
 		req:75 GoldenePommes:earned
