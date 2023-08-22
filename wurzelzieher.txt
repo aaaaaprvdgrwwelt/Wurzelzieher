@@ -27,7 +27,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 taler
 		on click:if (have GoldenerDaumen and chance(1%)) yield 1 GoldenePommes
-		on click:if (have GoldenerMittelfinger and chance(1%)) yield 10 GoldenePommes
+		on click:if (have GoldenerMittelfinger and chance(90%)) yield 100 GoldenePommes
 		icon:https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/logo.png
 		no text
 		class:bigButton hasFlares
