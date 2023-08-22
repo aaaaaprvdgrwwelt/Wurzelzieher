@@ -341,8 +341,8 @@ Upgrades
 		desc:Das Schnitzel mit einer sahnig-cremigen Pilzrahm-Soße und Pommes.<//><b>Effekt:</b><.>Einkommen durch Schnitzel x 2
 		icon:icons[1,7]
 		cost:100000 taler
-		passive:multiply yield of Schnitzel by 2
-		req:(Schnitzel>=50)
+		passive:multiply yield of schnitzel by 2
+		req:(schnitzel>=50)
 
 
 //		
