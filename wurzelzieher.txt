@@ -297,7 +297,7 @@ Upgrades
 	*GoldenerMittelfinger
 		name:Goldener Mittelfinger
 		desc:Der goldenen Mittelfinger übertrifft den goldenen Daumen in seiner Effizienz, goldene Pommes heranzuziehen.<//><b>Effekt:</b><.>Eine Chance von 0,666%, mit einem Wurzelzieher 1 - 5 goldene Pommes zu erzeugen.
-		icon:icons[2,5]
+		icon:icons[1,5]
 		cost:100 GoldenePommes
 		req:75 GoldenePommes:earned
 
