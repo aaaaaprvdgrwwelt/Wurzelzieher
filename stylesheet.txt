@@ -166,8 +166,25 @@
 
 
 /* Ueberschreiben der Default-Klasse */
-.hasFlares::before, .hasFlares::after{
-	background: url(https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/flare.png)
+.hasFlares{z-index:0;}
+.hasFlares:before,.hasFlares:after
+{
+	content:'';
+	width:150%;
+	height:150%;
+	position:absolute;
+	left:-25%;
+	top:-25%;
+	background:url(https://raw.githubusercontent.com/aaaaaprvdgrwwelt/Wurzelklicker/main/grafiken/flare.png);
+	background-size:100%;
+	display:block;
+	z-index:-1;
+	animation:spinFade 3s linear infinite;
+	pointer-events:none;
+}
+.hasFlares:after
+{
+	animation:spinFade2 3s linear infinite;
 }
 
 
