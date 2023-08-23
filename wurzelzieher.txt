@@ -185,6 +185,24 @@ Buildings
 		req:20000 taler:earned
 
 
+	*burger
+		// Titel
+		name:Burger
+		// Beschreibung
+		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
+		// Icon Grafik
+		icon:icons[0,1]
+		// Kosten für das erste Gebäude
+		cost:3000000 taler, 4 GoldenePommes
+		// Jedes neue Gebäude wird x% teurer
+		cost increase:110%
+		// Rückzahlung beim Verkauf
+		cost refund:50%
+		// Einnahmen pro Tick (1 sec)
+		on tick:yield 1000 taler
+		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
+		req:3000000 taler:earned
+//		req:3000000 taler:earned and independenceDay
 
 
 //	*currywurst|currywuerste
@@ -224,23 +242,6 @@ Buildings
 //		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
 //		req:200000 taler:earned and independenceDay
 //		
-//	*burger
-//		// Titel
-//		name:Burger
-//		// Beschreibung
-//		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
-//		// Icon Grafik
-//		icon:icons[3,6]
-//		// Kosten für das erste Gebäude
-//		cost:3000000 taler, 4 GoldenePommes
-//		// Jedes neue Gebäude wird x% teurer
-//		cost increase:110%
-//		// Rückzahlung beim Verkauf
-//		cost refund:50%
-//		// Einnahmen pro Tick (1 sec)
-//		on tick:yield 1000 taler
-//		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-//		req:3000000 taler:earned and independenceDay
 //		
 //	*kesselfleisch
 //		// Titel
