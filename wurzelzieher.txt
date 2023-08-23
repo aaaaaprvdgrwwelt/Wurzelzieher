@@ -134,7 +134,7 @@ Buildings
 		// Titel
 		name:Salat|Salate
 		// Beschreibung
-		desc:Ein kleiner Beilagensalat.<//><b>Einnahmen:</b><.>Generiert 1 Taler alle 2 Sekunden.
+		desc:Ein kleiner Beilagensalat.<//><b>Einnahmen:</b><.>Generiert 1 Taler pro Sekunde.
 		// Icon Grafik1
 		icon:icons[3,1]
 		// Kosten für das erste Gebäude
@@ -144,9 +144,9 @@ Buildings
 		// Rückzahlung beim Verkauf
 		cost refund:50%
 		// Einnahmen pro Tick (1 sec)
-		on tick:yield 0.5 taler
+		on tick:yield 1 taler
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:100 taler:earned
+		req:75 taler:earned
 	
 	*bratwurst|bratwuerste
 		// Titel
@@ -156,15 +156,15 @@ Buildings
 		// Icon Grafik
 		icon:icons[3,2]
 		// Kosten für das erste Gebäude
-		cost:600 taler
+		cost:1100 taler
 		// Jedes neue Gebäude wird x% teurer
 		cost increase:110%
 		// Rückzahlung beim Verkauf
 		cost refund:50%
 		// Einnahmen pro Tick (1 sec)
-		on tick:yield 5 taler
+		on tick:yield 8 taler
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:600 taler:earned
+		req:825 taler:earned
 
 	*schnitzel
 		// Titel
@@ -174,15 +174,15 @@ Buildings
 		// Icon Grafik
 		icon:icons[1,6]
 		// Kosten für das erste Gebäude
-		cost:20000 taler
+		cost:12000 taler
 		// Jedes neue Gebäude wird x% teurer
 		cost increase:110%
 		// Rückzahlung beim Verkauf
 		cost refund:50%
 		// Einnahmen pro Tick (1 sec)
-		on tick:yield 90 taler
+		on tick:yield 47 taler
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:20000 taler:earned
+		req:9000 taler:earned
 
 
 	*burger
@@ -191,18 +191,18 @@ Buildings
 		// Beschreibung
 		desc:Ein Burger aus getoastetem Bun, Tomate, Paprika, Salat, verschiedenen Soßen und einem 180 Gramm Bun.<//><b>Einnahmen:</b><.>Generiert 1.000 Taler pro Sekunde.
 		// Icon Grafik
-		icon:icons[0,1]
+		icon:icons[1,0]
 		// Kosten für das erste Gebäude
-		cost:3000000 taler, 4 GoldenePommes
+		cost:130000 taler, 4 GoldenePommes
 		// Jedes neue Gebäude wird x% teurer
 		cost increase:110%
 		// Rückzahlung beim Verkauf
 		cost refund:50%
 		// Einnahmen pro Tick (1 sec)
-		on tick:yield 1000 taler
+		on tick:yield 260 taler
 		// Diese Voraussetzungen müssen erfüllt sein zur Freischaltung
-		req:3000000 taler:earned
-//		req:3000000 taler:earned and independenceDay
+		req:97500 taler:earned
+//		req:97500 taler:earned and independenceDay
 
 
 //	*currywurst|currywuerste
