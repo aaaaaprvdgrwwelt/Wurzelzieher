@@ -93,7 +93,7 @@ Shinies
 			// Erhalte mindestens 7, oder den Wert zwischen 1 und 3 Minuten der Taler Produktion
 			$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
 			// Ausgabe bei Klick
-			toast Die rote HExe schenkt dir<//><b>[$amount] Taler</b>.
+			toast Die rote Hexe schenkt dir<//><b>[$amount] Taler</b>.
 			// Amount Taler zuweisen
 			yield $amount taler
 		end
