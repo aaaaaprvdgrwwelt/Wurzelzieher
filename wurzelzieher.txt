@@ -76,8 +76,7 @@ Shinies
 	*RoteHexe
 		on click:log Woop
 		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out
-		//movement:onRight moveLeft fade
-		movement: onRight moveLeft followMouse fade
+		movement:onRight moveLeft followMouse fade
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
