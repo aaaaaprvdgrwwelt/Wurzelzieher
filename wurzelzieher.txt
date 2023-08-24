@@ -73,10 +73,10 @@ Shinies
 			yield $amount GoldenePommes
 		end
 
-	*LadyinRed
+	*RoteHexe
 		on click:log Woop
-		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out, bewege dich hoch und runter mit Geschwindigkeit 0.05
-		movement:onRight moveLeft fade bounce:0.05
+		// Starte rechts vom Bildschirm, bewege dich nach links, fade in und out
+		movement:onRight moveLeft fade
 		// Dauer bis zum Erscheinen mindestens (sec)
 		frequency:1
 		// Zeitspanne bis zum Erscheinen höchstens (= frequency + frequency variation) (sec)
@@ -93,7 +93,7 @@ Shinies
 			// Erhalte mindestens 7, oder den Wert zwischen 1 und 3 Minuten der Taler Produktion
 			$amount=max(7,random(taler:ps*60*1,taler:ps*60*3))*$boost
 			// Ausgabe bei Klick
-			toast Die Dame in Rot schenkt dir<//><b>[$amount] Taler</b>.
+			toast Die rote HExe schenkt dir<//><b>[$amount] Taler</b>.
 			// Amount Taler zuweisen
 			yield $amount taler
 		end
@@ -495,9 +495,9 @@ Upgrades
 //		
 //	*FlotteLotte
 //		name:FLotte Lotte
-//		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Lady in Rot erscheint 33% häufiger
+//		desc:Flott! Wir müssen rechtzeitig liefern!<//><b>Auswirkung:</b><.>Die Rote Hexe erscheint 33% häufiger
 //		icon:icons[2,6]
-//		passive:multiply frequency of LadyinRed by 0.67
+//		passive:multiply frequency of RoteHexe by 0.67
 //		cost:5 GoldenePommes
 //		req:1 GoldenePommes:earned
 //	
