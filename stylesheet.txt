@@ -3,6 +3,7 @@
 #	text-align:center;
 	padding:0px;
 	padding-left: 25px !important;
+	margin-left: 25px !important;
 	box-shadow:none;
 }
 
